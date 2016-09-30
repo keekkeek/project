@@ -1,0 +1,40 @@
+@mixin dis-flo($direc){
+  display: block;
+  float: $direc;
+}
+
+@mixin baseSet($objHeight,$objWidth,$objMLeft,$objMTop,$objPLeft,$objPTop,$objBgColor,$objColor,$objFontSize,$objLineHeight){
+  @if $objHeight != ''{
+    height: $objHeight + px;
+  }
+  @if $objWidth != '' {
+    width: $objWidth + px;
+  }
+  @if $objMTop != '' {
+    margin-top: $objMTop+ px;
+  }
+  @if $objMLeft != '' {
+    margin-left: $objMLeft+ px;
+  }
+  @if $objPLeft != '' {
+    padding-left: $objPLeft+ px;
+  }
+  @if $objPTop != '' {
+    padding-top: $objPTop+ px;
+  }
+  @if $objBgColor != '' {
+    background-color: $objBgColor;
+  }
+  @if $objColor != '' {
+    color: $objColor;
+  }
+  @if $objFontSize != '' {
+    font-size: $objFontSize + px;
+  }
+  @if $objLineHeight != '' {
+    line-height: $objLineHeight + px;
+  }
+}
+
+
+

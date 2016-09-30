@@ -1,0 +1,47 @@
+@import "variable";
+@import "mixin";
+
+*{margin:0; padding:0;}
+body{font-size:12px; margin: 0 auto;}
+ul li {list-style:none;}
+a{ text-decoration:none;}
+img{ border:none;}
+
+
+body{ height: 652px; background-color: $loginBC;}
+#container{margin: 0 auto; @include baseSet(535,980,'',35,'','','','','','');
+  #title{ height: 57px; width: 980px; margin-bottom: 55px;
+    img,span{@include dis-flo(left);}
+    span{ border-left: 1px solid $grey; text-align: center; @include baseSet(28,99,20,29,'','','',$black,18,28);}
+  }
+  #box{@include baseSet(423,978,'','','','',white,'','',''); border: 1px solid $grey;
+    img{ margin-left: 60px; margin-top: 60px;}
+    #infos{@include dis-flo(right); @include baseSet(304,303,'',37,'','','','','',''); margin-right: 58px;
+      p{@include baseSet(16,303,'','','','','',$black,16,16);
+        span,a{ font-size: 10px;}
+        span{margin-left: 38px;}
+        a{ margin-left: 8px; color: blue;} margin-bottom: 10px;}
+      .name,.pass{@include baseSet(36,295,'','','','','','',14,36); margin-bottom: 26px;
+        border: 1px solid $border; .icon,input{@include dis-flo(left)}
+        .icon{ width: 34px; height: 35px; background: url(../image/paixiewang2.png) no-repeat 0 -1px;}
+        .input1,.input2{ border: none; @include baseSet(36,260,'','','','','',$grey,14,36);
+        outline: none;
+        }
+      }
+      .pass{.icon{ background-position: 0px -40px;}}
+      .i-div1 {height: 12px;
+        input,.auto,.forget{@include dis-flo(left);}
+        .auto {color: $grey;}
+        .forget{color: blue; margin-left: 149px;}
+      }
+      button{ outline: none; border: none; @include baseSet(40,295,'',18,'','',#ff6600,white,16,40); text-align: center; margin-bottom: 20px;}
+      span{color: $grey; font-size: 10px;}
+      ul{ margin-top: 10px;
+        li{@include dis-flo(left); height: 20px; width: 20px; margin-right: 10px; border-radius: 50%;
+        background: url(../image/paixiewang2.png) 0 -251px;
+        }
+      }
+    }
+  }
+  .remark{@include baseSet(12,'','',32,'','','','',12,12); text-align: center; color: $black;}
+}
