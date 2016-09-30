@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+body {
+  height: 652px;
+  background-color: #f5f5f5;
+}
+
+#container {
+  margin: 0 auto;
+  height: 535px;
+  width: 980px;
+  margin-top: 35px;
+}
+#container #title {
+  height: 57px;
+  width: 980px;
+  margin-bottom: 55px;
+}
+#container #title img, #container #title span {
+  display: block;
+  float: left;
+}
+#container #title span {
+  border-left: 1px solid #cccccc;
+  text-align: center;
+  height: 28px;
+  width: 99px;
+  margin-top: 29px;
+  margin-left: 20px;
+  color: #333333;
+  font-size: 18px;
+  line-height: 28px;
+}
+#container #box {
+  height: 423px;
+  width: 978px;
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+#container #box img {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+#container #box #infos {
+  display: block;
+  float: right;
+  height: 304px;
+  width: 303px;
+  margin-top: 37px;
+  margin-right: 58px;
+}
+#container #box #infos p {
+  height: 16px;
+  width: 303px;
+  color: #333333;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+#container #box #infos p span, #container #box #infos p a {
+  font-size: 10px;
+}
+#container #box #infos p span {
+  margin-left: 38px;
+}
+#container #box #infos p a {
+  margin-left: 8px;
+  color: blue;
+}
+#container #box #infos .name, #container #box #infos .pass {
+  height: 36px;
+  width: 295px;
+  font-size: 14px;
+  line-height: 36px;
+  margin-bottom: 26px;
+  border: 1px solid #dadada;
+}
+#container #box #infos .name .icon, #container #box #infos .name input, #container #box #infos .pass .icon, #container #box #infos .pass input {
+  display: block;
+  float: left;
+}
+#container #box #infos .name .icon, #container #box #infos .pass .icon {
+  width: 34px;
+  height: 35px;
+  background: url(../image/paixiewang2.png) no-repeat 0 -1px;
+}
+#container #box #infos .name .input1, #container #box #infos .name .input2, #container #box #infos .pass .input1, #container #box #infos .pass .input2 {
+  border: none;
+  height: 36px;
+  width: 260px;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 36px;
+  outline: none;
+}
+#container #box #infos .pass .icon {
+  background-position: 0px -40px;
+}
+#container #box #infos .i-div1 {
+  height: 12px;
+}
+#container #box #infos .i-div1 input, #container #box #infos .i-div1 .auto, #container #box #infos .i-div1 .forget {
+  display: block;
+  float: left;
+}
+#container #box #infos .i-div1 .auto {
+  color: #cccccc;
+}
+#container #box #infos .i-div1 .forget {
+  color: blue;
+  margin-left: 149px;
+}
+#container #box #infos button {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 295px;
+  margin-top: 18px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#container #box #infos span {
+  color: #cccccc;
+  font-size: 10px;
+}
+#container #box #infos ul {
+  margin-top: 10px;
+}
+#container #box #infos ul li {
+  display: block;
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: url(../image/paixiewang2.png) 0 -251px;
+}
+#container .remark {
+  height: 12px;
+  margin-top: 32px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #333333;
+}
+
+/*# sourceMappingURL=login.css.map */
