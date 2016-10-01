@@ -620,7 +620,7 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#content .inner #magnifier, #content .inner #summary, #content .inner #seller {
+#content .inner #magnifier, #content .inner #summary, #content .inner #seller, #content .inner #introduce, #content .inner #explain {
   display: block;
   float: left;
 }
@@ -942,6 +942,39 @@ img {
 #content .inner #seller .store-goods p {
   margin-top: 28px;
   text-align: center;
+}
+#content .inner #introduce {
+  width: 975px;
+  height: 240px;
+  margin-top: -270px;
+  border: solid 1px #cccccc;
+}
+#content .inner #introduce div {
+  display: block;
+  float: left;
+  height: 34px;
+  border-bottom: solid 1px #cc0000;
+  width: 138px;
+  line-height: 34px;
+  text-align: center;
+  border-right: solid 1px #cccccc;
+}
+#content .inner #introduce .spare {
+  border-right: none;
+  text-align: right;
+  width: 419px;
+}
+#content .inner #explain {
+  width: 965px;
+  background-color: #fafafa;
+}
+#content .inner #explain ul {
+  display: block;
+  float: left;
+}
+#content .inner #explain img {
+  display: block;
+  float: right;
 }
 
 /*# sourceMappingURL=detail.css.map */

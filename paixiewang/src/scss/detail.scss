@@ -42,7 +42,7 @@ img{ border:none;}
 #content{ height: 21772px; overflow: hidden;
   .inner{  height: 21772px;
     .road{ color: $detail-grey; margin-top: 10px; margin-bottom: 10px;}
-    #magnifier,#summary,#seller{ @include dis-flo(left);}
+    #magnifier,#summary,#seller,#introduce,#explain{ @include dis-flo(left);}
     #magnifier{ width: 424px; height: 534px;
      .left{ width: 424px;
       .big,.small,.tip{ width: 422px;}
@@ -152,6 +152,19 @@ img{ border:none;}
         p{ margin-top: 28px; text-align: center;}
       }
     }
-
+    #introduce{width:975px; height: 240px; margin-top: -270px;
+      border: solid 1px $grey;
+      div{
+        @include dis-flo(left); height: 34px; border-bottom: solid 1px #cc0000;
+        width: 138px; line-height: 34px; text-align: center;  border-right: solid 1px $grey;
+      }
+      .spare{ border-right: none; text-align: right; width: 419px;}
+    }
+    #explain{ width: 965px; background-color: #fafafa;
+      ul{@include dis-flo(left);}
+      img{@include dis-flo(right);}
+    }
   }
 }
+
+
