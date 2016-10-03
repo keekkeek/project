@@ -30,7 +30,7 @@ img {
 
 #header {
   height: 30px;
-  background-color: #f2f1f1;
+  background-color: #fafafa;
   color: black;
   line-height: 30px;
 }
@@ -101,6 +101,7 @@ img {
   width: 590px;
   margin-left: 187px;
   line-height: 14px;
+  z-index: 100;
 }
 #header div .h-part2 ul {
   height: 30px;
@@ -108,14 +109,53 @@ img {
 #header div .h-part2 ul li {
   display: block;
   float: left;
-  height: 14px;
+  height: 30px;
   padding-left: 9px;
   padding-right: 9px;
+  line-height: 30px;
+}
+#header div .h-part2 ul li a {
+  display: block;
+  float: left;
+}
+#header div .h-part2 ul .break {
+  display: block;
+  float: left;
+  height: 30px;
+  width: 1px;
+  margin-left: 3px;
+  color: #ccc;
+  line-height: 30px;
+  font-style: normal;
+  margin-right: 3px;
+}
+#header div .h-part2 ul .web-guide {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 180px;
+  z-index: 100;
+}
+#header div .h-part2 ul .web-guide div {
+  display: block;
+  height: 30px;
+  width: 64px;
+  z-index: 100;
+  background-color: white;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+#header div .h-part2 ul .web-guide div .img1 {
+  display: block;
+  float: right;
+  height: 8px;
+  width: 16px;
   margin-top: 8px;
-  border-right: 1px solid #cccccc;
+  background: url("../image/paixiewang1.png") no-repeat -142px -500px;
 }
 #header div .h-part2 ul .h-shopcar a {
+  margin-top: 8px;
   height: 14px;
+  line-height: 14px;
   border: 1px solid #cccccc;
   background-color: #fdf7ec;
 }
@@ -189,12 +229,14 @@ img {
   color: #e7381c;
 }
 #top div .t-adv {
+  z-index: 10;
   width: 212px;
   margin-left: 136px;
   position: relative;
   overflow: hidden;
 }
 #top div .t-adv .t-ablum1 {
+  z-index: 10;
   width: 848px;
   height: 59px;
   position: absolute;
@@ -204,6 +246,7 @@ img {
 #top div .t-adv .t-ablum1 li {
   width: 212px;
   height: 59px;
+  z-index: 10;
 }
 #top div .t-adv .t-ablum2 {
   position: absolute;
@@ -505,28 +548,6 @@ img {
   color: orange;
   font-size: 8px;
   line-height: 12px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-size: 12px;
-  margin: 0 auto;
-}
-
-ul li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  border: none;
 }
 
 * {

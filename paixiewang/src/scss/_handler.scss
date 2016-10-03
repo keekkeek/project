@@ -7,13 +7,11 @@ ul li {list-style:none;}
 a{ text-decoration:none;}
 img{ border:none;}
 
-
-
 #header,#top,#nav,#bottom,#footer,#advertise{ width: 100%;
   div{ width: 1263px; margin: 0 auto;}
 }
 
-#header{@include baseSet(30,'','','','','',#f2f1f1,black,'',30);
+#header{@include baseSet(30,'','','','','',#fafafa,black,'',30);
   div{ height: 30px;
     .h-part1, .h-part2{ @include dis-flo(left);}
     .h-part1{ @include baseSet(30,430,'','',30,'','','','',30);
@@ -28,13 +26,26 @@ img{ border:none;}
         span{color: black;}
       }
     }
-    .h-part2{ @include baseSet(30,590,187,'','','','','','',14);
+    .h-part2{ @include baseSet(30,590,187,'','','','','','',14); z-index: 100;
       ul{ height: 30px;
-        li{ @include dis-flo(left); height: 14px; padding-left: 9px; padding-right: 9px;
-          margin-top: 8px; border-right: 1px solid $grey;}
-        .h-shopcar a{ height: 14px; border: 1px solid $grey; background-color: #fdf7ec;
-          span{ color: $headerRed; }
+        li{ @include dis-flo(left); height: 30px; padding-left: 9px; padding-right: 9px;
+          line-height: 30px;
+          a{@include dis-flo(left);}
         }
+        .break{@include dis-flo(left); @include baseSet(30,1,3,'','','','',#ccc,'',30);font-style: normal; margin-right: 3px;
+        }
+        .web-guide{ padding-left: 0px; padding-right: 0px;height: 180px; z-index: 100;
+            div{ display: block; height: 30px; width: 64px; z-index: 100; background-color: white;
+              padding-left: 9px; padding-right: 9px;
+            .img1{@include dis-flo(right);
+              @include baseSet(8,16,'',8,'','','','','',''); background: url('../image/paixiewang1.png') no-repeat -142px -500px;}
+            }
+
+        }
+
+        .h-shopcar {a{ margin-top: 8px; height: 14px; line-height: 14px; border: 1px solid $grey; background-color: #fdf7ec;
+          span{  color: $headerRed; }
+        }}
         .h-phone{ border-right: none;}
       }
     }
@@ -55,9 +66,9 @@ img{ border:none;}
       ul { li{padding-right: 10px; margin-top: 5px; &:hover{ color: $logoRed;}}
         .t-red{ color: $logoRed;}}
     }
-    .t-adv{ width: 212px; margin-left: 136px; position: relative; overflow: hidden;
-      .t-ablum1{ width: 848px; height: 59px; position: absolute; top: 15px; left: 0px;
-        li{ width: 212px; height: 59px;}
+    .t-adv{ z-index: 10; width: 212px; margin-left: 136px; position: relative; overflow: hidden;
+      .t-ablum1{  z-index: 10; width: 848px; height: 59px; position: absolute; top: 15px; left: 0px;
+        li{ width: 212px; height: 59px;  z-index: 10;}
       }
       .t-ablum2{ position: absolute; right: 0px; bottom: 14px;
         li{ padding-left: 4px; width:10px; height: 4px;
