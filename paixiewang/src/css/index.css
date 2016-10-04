@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 #container {
   height: 4614px;
 }
@@ -12,6 +16,7 @@
 
 #carousel {
   height: 390px;
+  margin-top: 36px;
 }
 #carousel div {
   height: 390px;
@@ -31,6 +36,7 @@
   left: 0px;
   height: 390px;
   width: 8841px;
+  z-index: -1;
 }
 #carousel div .c-album1 li {
   height: 390px;
@@ -50,35 +56,56 @@
 #carousel div .c-album2 li:hover {
   background-color: #e7381c;
 }
+#carousel div #butleft, #carousel div #butright {
+  display: none;
+  height: 80px;
+  width: 40px;
+  z-index: 2;
+  position: absolute;
+  top: 195px;
+  margin-top: -40px;
+  opacity: 0.5;
+  background: url("../image/left&right.png") no-repeat 0px 0px;
+}
+#carousel div #butleft {
+  left: 20px;
+}
+#carousel div #butright {
+  background-position: 0 -81px;
+  right: 20px;
+}
 
 #activity {
   height: 330px;
 }
-#activity div .a-head, #activity div .a-bottom {
+#activity .inner {
+  position: relative;
+}
+#activity .inner .a-head {
   margin-left: 210px;
 }
-#activity div .a-head {
+#activity .inner .a-head {
   height: 30px;
   width: 990px;
   background-color: #e6e1e1;
 }
-#activity div .a-head ul {
+#activity .inner .a-head ul {
   display: block;
   float: left;
   width: 402px;
   height: 30px;
 }
-#activity div .a-head ul li {
+#activity .inner .a-head ul li {
   display: block;
   float: left;
   height: 30px;
   width: 134px;
   font-size: 14px;
 }
-#activity div .a-head ul li:hover {
+#activity .inner .a-head ul li:hover {
   background-color: white;
 }
-#activity div .a-head ul li a {
+#activity .inner .a-head ul li a {
   display: block;
   height: 14px;
   width: 133px;
@@ -87,7 +114,7 @@
   border-right: 1px solid #cccccc;
   text-align: center;
 }
-#activity div .a-head button {
+#activity .inner .a-head button {
   display: block;
   float: right;
   margin-right: 7px;
@@ -100,18 +127,21 @@
   text-align: center;
   border: 1px solid #cccccc;
 }
-#activity div .a-head button:hover {
+#activity .inner .a-head button:hover {
   color: #e7381c;
   border: 1px solid #e7381c;
 }
-#activity div .a-bottom {
+#activity .inner .a-bottom1, #activity .inner .a-bottom2, #activity .inner .a-bottom3 {
+  position: absolute;
+  top: 30px;
+  left: 210px;
   width: 988px;
   height: 299px;
   border: 1px solid #cccccc;
   border-top: none;
   overflow: hidden;
 }
-#activity div .a-bottom table {
+#activity .inner .a-bottom1 table, #activity .inner .a-bottom2 table, #activity .inner .a-bottom3 table {
   height: 281px;
   width: 970px;
   margin-top: 9px;
@@ -119,12 +149,15 @@
   border-collapse: collapse;
   border: none;
 }
-#activity div .a-bottom table td {
+#activity .inner .a-bottom1 table td, #activity .inner .a-bottom2 table td, #activity .inner .a-bottom3 table td {
   width: 324px;
   height: 140px;
   border: 1px solid #cccccc;
 }
-#activity div .a-bottom table td dl dd, #activity div .a-bottom table td dl dt {
+#activity .inner .a-bottom1 table td dl, #activity .inner .a-bottom2 table td dl, #activity .inner .a-bottom3 table td dl {
+  height: 120px;
+}
+#activity .inner .a-bottom1 table td dl dd, #activity .inner .a-bottom1 table td dl dt, #activity .inner .a-bottom2 table td dl dd, #activity .inner .a-bottom2 table td dl dt, #activity .inner .a-bottom3 table td dl dd, #activity .inner .a-bottom3 table td dl dt {
   display: block;
   float: left;
   height: 100px;
@@ -132,24 +165,24 @@
   margin-top: 20px;
   margin-left: 12px;
 }
-#activity div .a-bottom table td dl dd {
+#activity .inner .a-bottom1 table td dl dd, #activity .inner .a-bottom2 table td dl dd, #activity .inner .a-bottom3 table td dl dd {
   width: 104px;
 }
-#activity div .a-bottom table td dl dd a {
+#activity .inner .a-bottom1 table td dl dd a, #activity .inner .a-bottom2 table td dl dd a, #activity .inner .a-bottom3 table td dl dd a {
   display: block;
 }
-#activity div .a-bottom table td dl dd .a-price {
+#activity .inner .a-bottom1 table td dl dd .a-price, #activity .inner .a-bottom2 table td dl dd .a-price, #activity .inner .a-bottom3 table td dl dd .a-price {
   height: 22px;
   width: 104px;
   margin-left: 12px;
   color: #e7381c;
   font-size: 8px;
 }
-#activity div .a-bottom table td dl dd .a-price span {
+#activity .inner .a-bottom1 table td dl dd .a-price span, #activity .inner .a-bottom2 table td dl dd .a-price span, #activity .inner .a-bottom3 table td dl dd .a-price span {
   font-weight: bold;
   font-size: 20px;
 }
-#activity div .a-bottom table td dl dd .a-original {
+#activity .inner .a-bottom1 table td dl dd .a-original, #activity .inner .a-bottom2 table td dl dd .a-original, #activity .inner .a-bottom3 table td dl dd .a-original {
   height: 8px;
   width: 104px;
   margin-top: 6px;
@@ -157,7 +190,7 @@
   color: #cccccc;
   font-size: 8px;
 }
-#activity div .a-bottom table td dl dd .a-name {
+#activity .inner .a-bottom1 table td dl dd .a-name, #activity .inner .a-bottom2 table td dl dd .a-name, #activity .inner .a-bottom3 table td dl dd .a-name {
   height: 12px;
   width: 104px;
   margin-top: 6px;
@@ -165,7 +198,7 @@
   color: #cccccc;
   font-size: 12px;
 }
-#activity div .a-bottom table td dl dd .a-slogan {
+#activity .inner .a-bottom1 table td dl dd .a-slogan, #activity .inner .a-bottom2 table td dl dd .a-slogan, #activity .inner .a-bottom3 table td dl dd .a-slogan {
   height: 30px;
   width: 104px;
   margin-top: 6px;
@@ -175,17 +208,20 @@
   line-height: 30px;
   text-align: center;
 }
-#activity div .a-bottom table .a-shoe1, #activity div .a-bottom table .a-shoe2, #activity div .a-bottom table .a-shoe3 {
+#activity .inner .a-bottom1 table .a-shoe1, #activity .inner .a-bottom1 table .a-shoe2, #activity .inner .a-bottom1 table .a-shoe3, #activity .inner .a-bottom2 table .a-shoe1, #activity .inner .a-bottom2 table .a-shoe2, #activity .inner .a-bottom2 table .a-shoe3, #activity .inner .a-bottom3 table .a-shoe1, #activity .inner .a-bottom3 table .a-shoe2, #activity .inner .a-bottom3 table .a-shoe3 {
   border-top: none;
 }
-#activity div .a-bottom table .a-shoe4, #activity div .a-bottom table .a-shoe5, #activity div .a-bottom table .a-shoe6 {
+#activity .inner .a-bottom1 table .a-shoe4, #activity .inner .a-bottom1 table .a-shoe5, #activity .inner .a-bottom1 table .a-shoe6, #activity .inner .a-bottom2 table .a-shoe4, #activity .inner .a-bottom2 table .a-shoe5, #activity .inner .a-bottom2 table .a-shoe6, #activity .inner .a-bottom3 table .a-shoe4, #activity .inner .a-bottom3 table .a-shoe5, #activity .inner .a-bottom3 table .a-shoe6 {
   border-bottom: none;
 }
-#activity div .a-bottom table .a-shoe1, #activity div .a-bottom table .a-shoe4 {
+#activity .inner .a-bottom1 table .a-shoe1, #activity .inner .a-bottom1 table .a-shoe4, #activity .inner .a-bottom2 table .a-shoe1, #activity .inner .a-bottom2 table .a-shoe4, #activity .inner .a-bottom3 table .a-shoe1, #activity .inner .a-bottom3 table .a-shoe4 {
   border-left: none;
 }
-#activity div .a-bottom table .a-shoe3, #activity div .a-bottom table .a-shoe6 {
+#activity .inner .a-bottom1 table .a-shoe3, #activity .inner .a-bottom1 table .a-shoe6, #activity .inner .a-bottom2 table .a-shoe3, #activity .inner .a-bottom2 table .a-shoe6, #activity .inner .a-bottom3 table .a-shoe3, #activity .inner .a-bottom3 table .a-shoe6 {
   border-right: none;
+}
+#activity .inner .a-bottom2, #activity .inner .a-bottom3 {
+  display: none;
 }
 
 #womanShop, #sportShop, #manShop, #outdoorShop, #clotheShop, #childShop {

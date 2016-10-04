@@ -1,5 +1,6 @@
 @import "variable";
 @import "mixin";
+@import "util";
 
 *{margin:0; padding:0;}
 body{font-size:12px; margin: 0 auto;}
@@ -26,9 +27,15 @@ body{ height: 652px; background-color: $loginBC;}
       width: 660px; margin-left: 40px;
       .name, .pass, .pass2 {
         @include baseSet(40, 660, '', '', '', '', '', $black, '', 40); margin-bottom: 26px;
-        label,input{@include dis-flo(left);}
+        label,input,span,a{@include dis-flo(left);}
         label{ text-align: right; width: 69px; color: $black;}
         input{ @include baseSet(36,288,'','','','','','',14,36);}
+        a{ width: 10px; height: 10px; margin-left: -15px; margin-top: 13px; display: none;
+        background: url('../image/signup/signup.png') no-repeat -78px -106px;
+        }
+        span{ @include baseSet(38,288,'','','','',#eef9ff,'',12,38);
+        border: solid 1px #ddf3ff; border-left: none; display: none;
+        }
       }
       .pass2{ margin-bottom: 17px;}
       .commit{

@@ -1,3 +1,101 @@
+#top .t-adv .t-ablum2 li .display1 {
+  height: 4px;
+  background-color: #e7381c;
+  margin-top: 0px;
+}
+
+#carousel div .c-album2 .display2 {
+  background-color: #e7381c;
+}
+
+#nav div #down-list #nest .nest-shop ul .color1 {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color1 a {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color2 {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color2 a {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color3 {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color3 a {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color4 {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color4 a {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color5 {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color5 a {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color6 {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color6 a {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color7 {
+  color: white;
+  background-color: #e34242;
+}
+#nav div #down-list #nest .nest-shop ul .color7 a {
+  color: white;
+  background-color: #e34242;
+}
+
+#container #box #left .name .common, .pass .common, .pass2 .common {
+  height: 38px;
+  width: 288px;
+  background-color: #eef9ff;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px #ddf3ff;
+  border-left: none;
+}
+
+#container #box #left .name .right, .pass .right, .pass2 .right {
+  height: 38px;
+  width: 288px;
+  background-color: #ccc;
+  color: white;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px orange;
+  border-left: none;
+}
+
+#container #box #left .name .wrong, .pass .wrong, .pass2 .wrong {
+  height: 38px;
+  width: 288px;
+  background-color: #fdeaea;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px pink;
+  border-left: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +172,7 @@ body {
   line-height: 40px;
   margin-bottom: 26px;
 }
-#container #box #left .name label, #container #box #left .name input, #container #box #left .pass label, #container #box #left .pass input, #container #box #left .pass2 label, #container #box #left .pass2 input {
+#container #box #left .name label, #container #box #left .name input, #container #box #left .name span, #container #box #left .name a, #container #box #left .pass label, #container #box #left .pass input, #container #box #left .pass span, #container #box #left .pass a, #container #box #left .pass2 label, #container #box #left .pass2 input, #container #box #left .pass2 span, #container #box #left .pass2 a {
   display: block;
   float: left;
 }
@@ -88,6 +186,24 @@ body {
   width: 288px;
   font-size: 14px;
   line-height: 36px;
+}
+#container #box #left .name a, #container #box #left .pass a, #container #box #left .pass2 a {
+  width: 10px;
+  height: 10px;
+  margin-left: -15px;
+  margin-top: 13px;
+  display: none;
+  background: url("../image/signup/signup.png") no-repeat -78px -106px;
+}
+#container #box #left .name span, #container #box #left .pass span, #container #box #left .pass2 span {
+  height: 38px;
+  width: 288px;
+  background-color: #eef9ff;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px #ddf3ff;
+  border-left: none;
+  display: none;
 }
 #container #box #left .pass2 {
   margin-bottom: 17px;

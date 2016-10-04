@@ -1,16 +1,20 @@
 @import "variable";
 @import "mixin";
 
+body{
+  overflow-x: hidden;
+}
+
 #container{ height: 4614px;}
 
 #carousel,#activity,#womanShop,#sportShop,#manShop,#outdoorShop,#clotheShop,#childShop,#focus,#trifle{ width: 100%;
   div{ width: 1200px; margin: 0 auto;}
 }
 
-#carousel{height: 390px;
+#carousel{height: 390px; margin-top: 36px;
   div{ height: 390px; position: relative; overflow: hidden; width: 1263px;
     ul{ position: absolute; li{ @include dis-flo(left);}}
-    .c-album1{ top: 0px; left: 0px; height: 390px; width: 8841px;
+    .c-album1{ top: 0px; left: 0px; height: 390px; width: 8841px; z-index: -1;
       li{ height: 390px; width: 1263px;}
     }
     .c-album2{ bottom: 15px; left: 250px; height: 13px;
@@ -18,12 +22,18 @@
         &:hover{ background-color: $logoRed;}
       }
     }
+    #butleft,#butright{ display: none;
+      height: 80px; width: 40px; z-index: 2; position: absolute; top: 195px; margin-top: -40px; opacity: 0.5;
+      background: url("../image/left&right.png") no-repeat 0px 0px;
+    }
+    #butleft{ left: 20px;}
+    #butright{ background-position: 0 -81px; right: 20px;}
   }
 }
 
 #activity{ height: 330px;
-  div{
-    .a-head, .a-bottom{ margin-left: 210px;}
+  .inner{ position: relative;
+    .a-head{ margin-left: 210px;}
     .a-head{@include baseSet(30,990,'','','','',#e6e1e1,'','','');
       ul{ @include dis-flo(left); width: 402px; height: 30px;
         li{ @include dis-flo(left); @include baseSet(30,134,'','','','','','',14,'');
@@ -36,10 +46,11 @@
         @include baseSet(20,46,'',5,'','',white,'',12,20); text-align: center; border:1px solid $grey;
         &:hover{ color: $logoRed; border: 1px solid $logoRed;}}
     }
-    .a-bottom{ width: 988px; height: 299px; border: 1px solid $grey; border-top:none; overflow: hidden;
+    .a-bottom1,.a-bottom2,.a-bottom3{ position: absolute; top: 30px; left: 210px;
+      width: 988px; height: 299px; border: 1px solid $grey; border-top:none; overflow: hidden;
       table{@include baseSet(281,970,9,9,'','','','','',''); border-collapse: collapse;
         border: none; td{ width: 324px; height: 140px; border: 1px solid $grey;
-        dl{
+        dl{ height: 120px;
           dd,dt{ @include dis-flo(left); @include baseSet(100,140,12,20,'','','','','','')}
           dd{width: 104px; a{ display: block;}
             .a-price{ @include baseSet(22,104,12,'','','','',$logoRed,8,''); span{ font-weight: bold; font-size: 20px;}}
@@ -54,6 +65,7 @@
         .a-shoe1,.a-shoe4{ border-left: none;} .a-shoe3,.a-shoe6{ border-right: none;}
       }
     }
+    .a-bottom2,.a-bottom3{ display: none;}
   }
 }
 

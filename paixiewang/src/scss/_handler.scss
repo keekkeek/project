@@ -26,49 +26,58 @@ img{ border:none;}
         span{color: black;}
       }
     }
-    .h-part2{ @include baseSet(30,590,187,'','','','','','',14); z-index: 100;
-      ul{ height: 30px;
+    .h-part2{ @include baseSet(30,640,137,'','','','','','',14);
+      ul{ height: 30px; position: relative;
         li{ @include dis-flo(left); height: 30px; padding-left: 9px; padding-right: 9px;
           line-height: 30px;
           a{@include dis-flo(left);}
         }
-        .break{@include dis-flo(left); @include baseSet(30,1,3,'','','','',#ccc,'',30);font-style: normal; margin-right: 3px;
+        i{@include dis-flo(left); @include baseSet(30,1,3,'','','','',#ccc,'',30);font-style: normal; margin-right: 3px;
         }
-        .web-guide{ padding-left: 0px; padding-right: 0px;height: 180px; z-index: 100;
-            div{ display: block; height: 30px; width: 64px; z-index: 100; background-color: white;
-              padding-left: 9px; padding-right: 9px;
+        .break1,.break2{ margin-left: 84px;}
+        .mine,.web-guide{position: absolute;
+          padding-left: 0px; padding-right: 0px;height: 30px; z-index: 100;
+          div{ height: 30px; width: 64px; background-color: white;
+              padding-left: 9px; padding-right: 9px; border-bottom: solid 1px #fafafa;
             .img1{@include dis-flo(right);
               @include baseSet(8,16,'',8,'','','','','',''); background: url('../image/paixiewang1.png') no-repeat -142px -500px;}
+              &:hover{ color: red; background-color: #fafafa;}
             }
-
+            .div2,.div3,.div4,.div5,.div6{ display: none;
+              border-right: 1px solid #ccc; border-bottom: 1px solid #fafafa; border-left: 1px solid #ccc;}
+            .div1{ height: 28px; background-color: #fafafa; border: 1px solid #fafafa; border-color: #fafafa;}
+            .div6{ border-bottom: 1px solid #ccc;}
         }
-
+        .web-guide{ position: absolute; top: 0px; left: 460px;}
         .h-shopcar {a{ margin-top: 8px; height: 14px; line-height: 14px; border: 1px solid $grey; background-color: #fdf7ec;
-          span{  color: $headerRed; }
+          span{ color: $headerRed; }
         }}
-        .h-phone{ border-right: none;}
+        .h-mobile{ img{ margin-top: 5px}  line-height: 14px;}
       }
     }
   }
 }
 
 #top{ height: 92px;
-  div{ height: 92px;
+  div{ height: 92px; position: relative;
     .t-logo, .t-search, .t-adv{ @include dis-flo(left); height: 92px;}
     li{@include dis-flo(left);}
     .t-logo{ width: 210px; margin-left: 30px; background:url("../image/t-logo.jpg") no-repeat;}
     .t-search{ margin-left: 250px; width: 389px;
       .t-input{ @include baseSet(30,383,'',23,'','','','','',''); border: 2px solid $logoRed;
         input,button{ @include dis-flo(left); border: none; outline: none;}
-        input{ @include baseSet(30,285,'','',25,'','','',14,80);}
+        input{ @include baseSet(30,280,'','',30,'','','',14,80);
+          background: url("../image/paixiewang1.png") no-repeat -170px -588px;
+        }
         button{ @include baseSet(30,73,'','','','',$logoRed,white,14,30); text-align: center;}
       }
       ul { li{padding-right: 10px; margin-top: 5px; &:hover{ color: $logoRed;}}
         .t-red{ color: $logoRed;}}
     }
-    .t-adv{ z-index: 10; width: 212px; margin-left: 136px; position: relative; overflow: hidden;
-      .t-ablum1{  z-index: 10; width: 848px; height: 59px; position: absolute; top: 15px; left: 0px;
-        li{ width: 212px; height: 59px;  z-index: 10;}
+    .t-adv{ width: 212px; margin-left: 136px; position: relative; overflow: hidden;
+      .t-ablum1{  width: 848px; height: 59px; position: absolute; top: 15px; left: 0px;
+        overflow: hidden;
+        li{ width: 212px; height: 59px;}
       }
       .t-ablum2{ position: absolute; right: 0px; bottom: 14px;
         li{ padding-left: 4px; width:10px; height: 4px;
@@ -81,20 +90,20 @@ img{ border:none;}
 }
 
 
-#nav{ height: 36px; background-color: $navBlue;
+#nav{ height: 36px; background-color: $navBlue; position: absolute; z-index: 2;
   div{ height: 36px;
     #down-list,ul{ @include dis-flo(left); height: 36px;}
     #down-list{ @include baseSet(36,210,30,'','','','',white,16,36);position: relative;
       .a1{@include baseSet(36,187,23,'','','','','',16,36);}
       &:hover{ background-color: $logoRed;}
     }
-    ul{
-      li{ @include dis-flo(left);
+    ul{ z-index: -1;
+      li{ @include dis-flo(left); z-index: -1;
         @include baseSet(36,'','','',18,'','',white,14,36); padding-right: 18px; font-weight: bold;
-        &:hover{ background-color: $navBlack;}
+        &:hover{ background-color: $navBlack; z-index: -1}
       }
       .n-selected{ background-color: $navBlack;}
-      .luggage{ margin-right: 230px;}
+      .luggage{ margin-right: 230px; }
     }
   }
 }
@@ -106,7 +115,7 @@ img{ border:none;}
       p{ font-size: 18px; color: black;}
       ul {
         @include baseSet(50, 120, '', '', '', '', white, black, 10, '');
-        li { @include dis-flo(left); background-color: white;  padding: 4px; height: 20px; line-height: 20px; text-align: center;
+        li { @include dis-flo(left); background-color: white;  padding: 4px; height: 14px; line-height: 14px; text-align: center;
           a{ color: #666666; background-color: white; font-size: 12px; font-weight: 500;}
         }
         }
