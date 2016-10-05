@@ -318,7 +318,7 @@ window.onload = function(){
 
                 var value = "order_id:" + order_id + "&shopname:" + shopname + "&goodname:" + goodsname +
                     "&goodsimg:" + goodsimg + "&goodscolor:" + goodscolor + "&goodssize:" + goodssize +
-                    "&goodsamount:" + goodsamount + "goodsprice" + goodsprice.substring(1);
+                    "&goodsamount:" + goodsamount + "&goodsprice:" + goodsprice.substring(1);
                 setCookie("goods" + order_id, value, 7);
                 window.location.href = "";
             }else{

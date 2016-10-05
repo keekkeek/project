@@ -12,7 +12,6 @@ window.onload = function(){
         var val3 = $(".i-div1 input").attr("checked");
         //将Cookie中的数据找出.
         var cookieInfos = getCookie("user");
-        console.log(cookieInfos);
         var cookies = cookieInfos.split("&");
         var cookie1 = cookies[0];
         var cookie2 = cookies[1];

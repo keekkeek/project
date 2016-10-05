@@ -33,7 +33,25 @@ img{ border:none;}
       width: 983px; padding-top: 20px; margin-bottom: 20px;
       .order{width: 983px; height: 172px;
         .first{ width: 983px; height: 22px; line-height: 22px;
-          .ckb1{}
+          .a1{ color: blue; margin-left: 8px; font-size: 14px; line-height: 22px; &:hover{text-decoration: underline; }}
+        }
+        .second{ width: 981px; height: 140px; border: solid 1px #ccc;
+          .benefit{ width: 981px; height: 36px; background-color: #edeaea; overflow: hidden;
+            .adv{@include baseSet(24,112,10,5,'','',white,red,14,24); text-align: center;
+              border:1px solid lightpink; border-radius: 2px; display: block;
+            }
+          }
+          .text{ width: 981px; height: 102px; position: relative;
+            .ckb2,.img1,.explain{@include dis-flo(left);}
+            .ckb2{ margin-left: 10px; margin-top: 50px;}
+            .img1{ border:1px solid #ccc; width: 80px; height: 80px; margin-top: 11px; margin-left:10px;}
+            .explain{@include baseSet(80,310,20,11,'','','','','',''); position: relative;
+              .p1{ width: 310px; height: 12px; line-height: 20px;}
+              .a2,.a3{ display: block; position: absolute; top:60px; left: 10px; height: 12px;}
+              .a3{ left: 82px;}
+            }
+            .a4{display: block; position: absolute; font-weight: bold; top:40px; left: 500px; height: 12px;}
+          }
         }
       }
     }
