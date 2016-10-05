@@ -1,0 +1,79 @@
+@import "variable";
+@import "mixin";
+
+#info,#pay-way{width: 100%;
+  .inner{width: 983px; margin: 0 auto;
+    .work{ font-size: 16px; font-weight: bold; margin-bottom: 25px;}
+  }
+}
+
+#info{margin-top: 28px;
+  .inner{
+    .address {
+      form {
+        @include baseSet(250, 983, '', '', '', '', #f9f9f9, '', '', '');
+        .label1, .label2, .label3, .label4, .label5, .label6, .label7, .label8, .input1, .input2, .input3, .input4, .input5, .select {
+          outline: none; @include baseSet(25, '', '', 15, '', '', '', '', '', 25);
+          .star { color: #f34e0f; } @include dis-flo(left);
+        }
+        .label1, .label3, .label4, .label5, .label7 { margin-left: 24px;  clear: both;  }
+        .select { height: 28px; width: 116px;}
+        .input1 { width: 103px;}
+        .input2 { width: 632px; }
+        .input3, .input4 { width: 160px;}
+        .label6, .label8 { color: $detail-grey;}
+      }
+      .submit1 {border: none; font-weight: bold;@include baseSet(30, 70, 24, 15, '', '', #f34e0f, white, 14, 30); margin-bottom: 32px;}
+    }
+    .pay-way{ .span1{ color: $detail-grey;}
+      .bank{@include baseSet(158,895,72,7,'','',#fffdf1,$detail-grey,'',''); border: solid 1px orange;
+        p{@include baseSet('','',20,16,'','','',black,'',''); margin-bottom: 10px;}
+        ul{margin-left: 20px; border-bottom: dotted 1px #ccc; height: 72px;
+          li{
+          @include dis-flo(left); width: 117px; margin-bottom: 10px;
+        }}
+        .p1{color: $detail-grey;}
+      }
+      .hdfk{ margin-top: 28px;}
+      .span2{ color: red;}
+      .submit2{@include baseSet(30,138,20,28,'','',#f65011,white,16,30); font-weight: bold; border: none; margin-bottom: 25px;}
+    }
+
+    .order-info{
+      p{ .revise{@include dis-flo(right); color: blue; font-size: 12px; font-weight: 400;}}
+      ul{ width: 983px; height: 24px; border-bottom: 2px solid $black;
+        li{ @include dis-flo(left);
+        height: 24px; line-height: 24px; color: #4c4c4c; margin-right: 100px;
+        }
+        .name{ margin-right: 350px;}
+        .price2{ margin-right: 0px;}
+      }
+      .total{@include baseSet(90,983,'',8,'','',#fffaf5,'','',''); border-top: 1px solid pink;
+        .cell1,.cell2,.cell3{@include dis-flo(left); height: 44px; width: 491px;}
+        .cell1{ border-right: 1px solid pink; a{ display: block; @include baseSet(22,118,8,8,'','',white,red,'',22);
+        border:solid 1px pink; text-align: center; border-radius: 3px;
+        }}
+        .cell2{a,span{ @include dis-flo(left); line-height: 44px;}  a{ margin-left: 60px; } span{ margin-left: 200px; font-weight: bold;}}
+        .cell1,.cell2{border-bottom: 1px solid pink;}
+        .cell3{ font-weight: bold; @include dis-flo(right); a{@include dis-flo(right); margin-right: 30px; line-height: 44px;}}
+      }
+    }
+
+    .total2{@include baseSet(175,981,'',10,'','',#fff9e0,'','',''); border: solid 1px orange; overflow: hidden;;
+      .left{ @include baseSet(175,266,10,10,'','','','','','');@include dis-flo(left);
+        input{ height: 24px;  font-size: 12px; outline: none;}
+        .input1{ width: 158px;} .input2{ width: 52px; height: 26px; border: none; background-color: #ccc; text-align: center;}
+        .input3{ width: 226px;}
+        .p1{ margin-top: 36px;}
+      }
+      .right {
+        @include dis-flo(right);
+        @include baseSet(102,264,'',40,'','','','','','');
+        .real,.span2,.span3{color: $detail-grey;}
+        .span2{ float: right; margin-right: 50px;}
+        button{@include baseSet(42,162,20,28,'','',#f65011,white,16,42); font-weight: bold; border: none;}
+      }
+    }
+  }
+}
+

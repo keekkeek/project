@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+#shop-car {
+  width: 100%;
+}
+#shop-car .inner {
+  width: 983px;
+  margin: 0 auto;
+}
+
+#shop-car .inner {
+  padding-top: 24px;
+}
+#shop-car .inner .top {
+  width: 983px;
+  height: 25px;
+}
+#shop-car .inner .top h1, #shop-car .inner .top p {
+  display: block;
+  float: left;
+}
+#shop-car .inner .top .count {
+  margin-top: 12px;
+}
+#shop-car .inner .top .alarm, #shop-car .inner .top img {
+  display: block;
+  float: right;
+  height: 25px;
+  line-height: 30px;
+}
+#shop-car .inner .general {
+  height: 32px;
+  width: 983px;
+  margin-top: 5px;
+  background-color: #edeaea;
+  color: #8e8e8e;
+  line-height: 32px;
+  border-top: solid 2px #b5b5b5;
+}
+#shop-car .inner .general .all {
+  margin-left: 16px;
+}
+#shop-car .inner .general .name {
+  margin-left: 200px;
+}
+#shop-car .inner .general .price {
+  margin-left: 189px;
+}
+#shop-car .inner .general .amount {
+  margin-left: 126px;
+}
+#shop-car .inner .general .price2 {
+  margin-left: 85px;
+}
+#shop-car .inner .general .operate {
+  margin-left: 60px;
+}
+#shop-car .inner .general2 {
+  height: 42px;
+  width: 983px;
+  margin-top: 10px;
+  background-color: #edeaea;
+  color: #8e8e8e;
+  line-height: 42px;
+}
+#shop-car .inner .general2 .all {
+  margin-left: 16px;
+}
+#shop-car .inner .general2 .del, #shop-car .inner .general2 .continue {
+  margin-left: 8px;
+}
+#shop-car .inner .general2 .chosen {
+  margin-left: 365px;
+}
+#shop-car .inner .general2 .chosen .span1, #shop-car .inner .general2 .chosen .span2 {
+  color: #f34e0f;
+}
+#shop-car .inner .general2 .chosen .span2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+#shop-car .inner .general2 .pay {
+  display: block;
+  float: right;
+  border: none;
+  outline: none;
+  height: 42px;
+  width: 160px;
+  background-color: #f34e0f;
+  color: white;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=shopcar.css.map */

@@ -1,0 +1,46 @@
+@import "variable";
+@import "mixin";
+
+*{margin:0; padding:0;}
+body{font-size:12px; margin: 0 auto;}
+ul li {list-style:none;}
+a{ text-decoration:none;}
+img{ border:none;}
+
+#shop-car{width: 100%;
+  .inner{ width: 983px; margin: 0 auto;}
+}
+
+
+#shop-car{
+  .inner{ padding-top: 24px;
+    .top{width: 983px; height: 25px;
+      h1,p{@include dis-flo(left);}
+      .count{ margin-top: 12px;}
+      .alarm,img{@include dis-flo(right); height: 25px; line-height: 30px;}
+
+    }
+    .general{@include baseSet(32,983,'',5,'','',#edeaea,$detail-grey,'',32);
+        border-top: solid 2px #b5b5b5;
+        .all{ margin-left: 16px;}
+        .name{ margin-left: 200px;}
+        .price{ margin-left: 189px;}
+        .amount{ margin-left: 126px;}
+        .price2{ margin-left: 85px;}
+        .operate{ margin-left: 60px;}
+    }
+    .general2{@include baseSet(42,983,'',10,'','',#edeaea,$detail-grey,'',42);
+      .all{ margin-left: 16px;}
+      .del,.continue{ margin-left: 8px;}
+      .chosen{ margin-left: 365px;
+        .span1,.span2{color: #f34e0f;}
+        .span2{ font-size: 18px; font-weight: bold;}
+      }
+      .pay{
+        @include dis-flo(right); border: none; outline: none;
+        @include baseSet(42,160,'','','','',#f34e0f,white,18,42); text-align: center;
+      }
+    }
+  }
+}
+
