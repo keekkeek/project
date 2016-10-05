@@ -23,11 +23,17 @@ window.onload = function(){
         $(".name a").css({display:"block"});
     });
 
+    $(".name a").click(function(){
+        $(".name input").val("");
+        $(".name span").css({display:"block"}).html(nameinfo1).removeClass().addClass("common");
+    });
+
     $(".name input").blur(function(){
         var value1 = $(this).val();
-        if(value1!=null) {
+        if(value1!="") {
             if (reg1.test(value1) || reg2.test(value1)) {
                 $(".name span").html(info).removeClass().addClass("right");
+
             } else if (value1.length < 4 || value1.length > 20) {
                 $(".name span").html(nameinfo2);
                 $(".name span").removeClass().addClass("wrong");
@@ -36,6 +42,7 @@ window.onload = function(){
             }
         }else{
             $(".name span").css({display: "none"});
+            $(".name a").css({display:"none"});
         }
     });
 
@@ -45,16 +52,23 @@ window.onload = function(){
         $(".pass a").css({display:"block"});
     });
 
+    $(".pass a").click(function(){
+        $(".pass input").val("");
+        $(".pass span").css({display:"block"}).html(passinfo1).removeClass().addClass("common");
+    });
+
     $(".pass input").blur(function(){
         var value1 = $(this).val();
-        if(value1!=null){
+        if(value1!=""){
             if(reg3.test(value1)){
-                $(".pass span").css({display: "none"});
+                $(".pass span").html(info).removeClass().addClass("right");
+
             }else{
                 $(".pass span").html(nameinfo3).removeClass().addClass("wrong");
             }
         }else{
             $(".pass span").css({display: "none"});
+            $(".pass a").css({display:"none"});
         }
     });
 
@@ -64,12 +78,46 @@ window.onload = function(){
         $(".pass2 a").css({display:"block"});
     });
 
+    $(".pass2 a").click(function(){
+        $(".pass2 input").val("");
+        $(".password-info2").css({display:"block"}).html(passinfo3).removeClass().addClass("common");
+    });
+
     $(".pass2 input").blur(function(){
         var value2 = $(this).val();
         var value1 = $(".pass input").val();
-        if(value1 == value2){
-            
+        if(value2!=""){
+            if(value1 == value2){
+                $(".pass2 span").html(info).removeClass().addClass("right");
+
+            }else{
+                $(".pass2 span").html(passinfo4).removeClass().addClass("wrong");
+            }
+        }else{
+            $(".pass2 span").css({display:"none"});
+            $(".pass2 a").css({display:"none"});
         }
+    });
+
+    $(".signup").click(function(){
+        var f1 = $(".name span").attr("class");
+        var f2 = $(".pass span").attr("class");
+        var f3 = $(".pass2 span").attr("class");
+        var f4 = $(".commit input").attr("checked");
+        if((f1=="right")&&(f2=="right")&&(f3=="right")&&(f4=="checked")){
+            var txt1 = $(".name input").val();
+            var txt2 = $(".pass input").val();
+            var value = "username:" + txt1 + "&userpassword:" + txt2;
+            setCookie("user",value,7);
+            alert("注册成功");
+            window.location.href = "../index.html";
+        }else{
+            alert("注册失败，请重新输入");
+        }
+    });
+
+    $("#right a").click(function(){
+        window.location.href = "login.html";
     });
 
 }

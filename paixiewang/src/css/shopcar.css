@@ -75,6 +75,20 @@ img {
 #shop-car .inner .general .operate {
   margin-left: 60px;
 }
+#shop-car .inner #goods {
+  width: 983px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+#shop-car .inner #goods .order {
+  width: 983px;
+  height: 172px;
+}
+#shop-car .inner #goods .order .first {
+  width: 983px;
+  height: 22px;
+  line-height: 22px;
+}
 #shop-car .inner .general2 {
   height: 42px;
   width: 983px;

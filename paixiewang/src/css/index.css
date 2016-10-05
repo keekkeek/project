@@ -81,6 +81,17 @@ body {
 #activity .inner {
   position: relative;
 }
+#activity .inner .a-adv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 210px;
+  height: 330px;
+}
+#activity .inner .a-adv img {
+  display: block;
+  margin-top: 10px;
+}
 #activity .inner .a-head {
   margin-left: 210px;
 }
@@ -101,9 +112,6 @@ body {
   height: 30px;
   width: 134px;
   font-size: 14px;
-}
-#activity .inner .a-head ul li:hover {
-  background-color: white;
 }
 #activity .inner .a-head ul li a {
   display: block;
@@ -131,7 +139,7 @@ body {
   color: #e7381c;
   border: 1px solid #e7381c;
 }
-#activity .inner .a-bottom1, #activity .inner .a-bottom2, #activity .inner .a-bottom3 {
+#activity .inner .a-bottom {
   position: absolute;
   top: 30px;
   left: 210px;
@@ -141,7 +149,7 @@ body {
   border-top: none;
   overflow: hidden;
 }
-#activity .inner .a-bottom1 table, #activity .inner .a-bottom2 table, #activity .inner .a-bottom3 table {
+#activity .inner .a-bottom table {
   height: 281px;
   width: 970px;
   margin-top: 9px;
@@ -149,15 +157,15 @@ body {
   border-collapse: collapse;
   border: none;
 }
-#activity .inner .a-bottom1 table td, #activity .inner .a-bottom2 table td, #activity .inner .a-bottom3 table td {
+#activity .inner .a-bottom table td {
   width: 324px;
   height: 140px;
   border: 1px solid #cccccc;
 }
-#activity .inner .a-bottom1 table td dl, #activity .inner .a-bottom2 table td dl, #activity .inner .a-bottom3 table td dl {
+#activity .inner .a-bottom table td dl {
   height: 120px;
 }
-#activity .inner .a-bottom1 table td dl dd, #activity .inner .a-bottom1 table td dl dt, #activity .inner .a-bottom2 table td dl dd, #activity .inner .a-bottom2 table td dl dt, #activity .inner .a-bottom3 table td dl dd, #activity .inner .a-bottom3 table td dl dt {
+#activity .inner .a-bottom table td dl dd, #activity .inner .a-bottom table td dl dt {
   display: block;
   float: left;
   height: 100px;
@@ -165,24 +173,24 @@ body {
   margin-top: 20px;
   margin-left: 12px;
 }
-#activity .inner .a-bottom1 table td dl dd, #activity .inner .a-bottom2 table td dl dd, #activity .inner .a-bottom3 table td dl dd {
+#activity .inner .a-bottom table td dl dd {
   width: 104px;
 }
-#activity .inner .a-bottom1 table td dl dd a, #activity .inner .a-bottom2 table td dl dd a, #activity .inner .a-bottom3 table td dl dd a {
+#activity .inner .a-bottom table td dl dd a {
   display: block;
 }
-#activity .inner .a-bottom1 table td dl dd .a-price, #activity .inner .a-bottom2 table td dl dd .a-price, #activity .inner .a-bottom3 table td dl dd .a-price {
+#activity .inner .a-bottom table td dl dd .a-price {
   height: 22px;
   width: 104px;
   margin-left: 12px;
   color: #e7381c;
   font-size: 8px;
 }
-#activity .inner .a-bottom1 table td dl dd .a-price span, #activity .inner .a-bottom2 table td dl dd .a-price span, #activity .inner .a-bottom3 table td dl dd .a-price span {
+#activity .inner .a-bottom table td dl dd .a-price span {
   font-weight: bold;
   font-size: 20px;
 }
-#activity .inner .a-bottom1 table td dl dd .a-original, #activity .inner .a-bottom2 table td dl dd .a-original, #activity .inner .a-bottom3 table td dl dd .a-original {
+#activity .inner .a-bottom table td dl dd .a-original {
   height: 8px;
   width: 104px;
   margin-top: 6px;
@@ -190,7 +198,7 @@ body {
   color: #cccccc;
   font-size: 8px;
 }
-#activity .inner .a-bottom1 table td dl dd .a-name, #activity .inner .a-bottom2 table td dl dd .a-name, #activity .inner .a-bottom3 table td dl dd .a-name {
+#activity .inner .a-bottom table td dl dd .a-name {
   height: 12px;
   width: 104px;
   margin-top: 6px;
@@ -198,7 +206,7 @@ body {
   color: #cccccc;
   font-size: 12px;
 }
-#activity .inner .a-bottom1 table td dl dd .a-slogan, #activity .inner .a-bottom2 table td dl dd .a-slogan, #activity .inner .a-bottom3 table td dl dd .a-slogan {
+#activity .inner .a-bottom table td dl dd .a-slogan {
   height: 30px;
   width: 104px;
   margin-top: 6px;
@@ -208,20 +216,17 @@ body {
   line-height: 30px;
   text-align: center;
 }
-#activity .inner .a-bottom1 table .a-shoe1, #activity .inner .a-bottom1 table .a-shoe2, #activity .inner .a-bottom1 table .a-shoe3, #activity .inner .a-bottom2 table .a-shoe1, #activity .inner .a-bottom2 table .a-shoe2, #activity .inner .a-bottom2 table .a-shoe3, #activity .inner .a-bottom3 table .a-shoe1, #activity .inner .a-bottom3 table .a-shoe2, #activity .inner .a-bottom3 table .a-shoe3 {
+#activity .inner .a-bottom table .a-shoe1, #activity .inner .a-bottom table .a-shoe2, #activity .inner .a-bottom table .a-shoe3 {
   border-top: none;
 }
-#activity .inner .a-bottom1 table .a-shoe4, #activity .inner .a-bottom1 table .a-shoe5, #activity .inner .a-bottom1 table .a-shoe6, #activity .inner .a-bottom2 table .a-shoe4, #activity .inner .a-bottom2 table .a-shoe5, #activity .inner .a-bottom2 table .a-shoe6, #activity .inner .a-bottom3 table .a-shoe4, #activity .inner .a-bottom3 table .a-shoe5, #activity .inner .a-bottom3 table .a-shoe6 {
+#activity .inner .a-bottom table .a-shoe4, #activity .inner .a-bottom table .a-shoe5, #activity .inner .a-bottom table .a-shoe6 {
   border-bottom: none;
 }
-#activity .inner .a-bottom1 table .a-shoe1, #activity .inner .a-bottom1 table .a-shoe4, #activity .inner .a-bottom2 table .a-shoe1, #activity .inner .a-bottom2 table .a-shoe4, #activity .inner .a-bottom3 table .a-shoe1, #activity .inner .a-bottom3 table .a-shoe4 {
+#activity .inner .a-bottom table .a-shoe1, #activity .inner .a-bottom table .a-shoe4 {
   border-left: none;
 }
-#activity .inner .a-bottom1 table .a-shoe3, #activity .inner .a-bottom1 table .a-shoe6, #activity .inner .a-bottom2 table .a-shoe3, #activity .inner .a-bottom2 table .a-shoe6, #activity .inner .a-bottom3 table .a-shoe3, #activity .inner .a-bottom3 table .a-shoe6 {
+#activity .inner .a-bottom table .a-shoe3, #activity .inner .a-bottom table .a-shoe6 {
   border-right: none;
-}
-#activity .inner .a-bottom2, #activity .inner .a-bottom3 {
-  display: none;
 }
 
 #womanShop, #sportShop, #manShop, #outdoorShop, #clotheShop, #childShop {

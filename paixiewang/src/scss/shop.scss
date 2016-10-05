@@ -29,7 +29,7 @@ img{ border:none;}
         ul { width: 402px; height: 42px;
           li{ width: 134px; height: 42px; position: relative; text-align: center;
             @include dis-flo(left);
-            hr{margin-top: 10px; height:1px; background-color: $grey;}
+            hr{margin-top: 10px; height:2px; border: none; background-color: $grey;}
             a{ position:absolute; top: 0px; left: 57px; text-align: center;
               @include baseSet(20,20,'','','','',$grey,white,'',20); border-radius: 50%;
             }

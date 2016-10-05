@@ -33,11 +33,15 @@ body{
 
 #activity{ height: 330px;
   .inner{ position: relative;
+    .a-adv{position: absolute;
+      top: 0px; left: 0px; width: 210px; height: 330px;
+      img{ display: block; margin-top: 10px;}
+    }
     .a-head{ margin-left: 210px;}
     .a-head{@include baseSet(30,990,'','','','',#e6e1e1,'','','');
       ul{ @include dis-flo(left); width: 402px; height: 30px;
         li{ @include dis-flo(left); @include baseSet(30,134,'','','','','','',14,'');
-          &:hover{ background-color: white;}
+          //&:hover{ background-color: white;}
           a{ display: block; @include baseSet(14,133,'',8,'','','','',14,'');
             border-right: 1px solid $grey; text-align: center;}
         }
@@ -46,7 +50,7 @@ body{
         @include baseSet(20,46,'',5,'','',white,'',12,20); text-align: center; border:1px solid $grey;
         &:hover{ color: $logoRed; border: 1px solid $logoRed;}}
     }
-    .a-bottom1,.a-bottom2,.a-bottom3{ position: absolute; top: 30px; left: 210px;
+    .a-bottom/*1,.a-bottom2,.a-bottom3*/{ position: absolute; top: 30px; left: 210px;
       width: 988px; height: 299px; border: 1px solid $grey; border-top:none; overflow: hidden;
       table{@include baseSet(281,970,9,9,'','','','','',''); border-collapse: collapse;
         border: none; td{ width: 324px; height: 140px; border: 1px solid $grey;
@@ -65,7 +69,7 @@ body{
         .a-shoe1,.a-shoe4{ border-left: none;} .a-shoe3,.a-shoe6{ border-right: none;}
       }
     }
-    .a-bottom2,.a-bottom3{ display: none;}
+    //.a-bottom2,.a-bottom3{ display: none;}
   }
 }
 

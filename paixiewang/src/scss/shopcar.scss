@@ -29,6 +29,15 @@ img{ border:none;}
         .price2{ margin-left: 85px;}
         .operate{ margin-left: 60px;}
     }
+    #goods{
+      width: 983px; padding-top: 20px; margin-bottom: 20px;
+      .order{width: 983px; height: 172px;
+        .first{ width: 983px; height: 22px; line-height: 22px;
+          .ckb1{}
+        }
+      }
+    }
+
     .general2{@include baseSet(42,983,'',10,'','',#edeaea,$detail-grey,'',42);
       .all{ margin-left: 16px;}
       .del,.continue{ margin-left: 8px;}

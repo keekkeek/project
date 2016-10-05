@@ -1,6 +1,6 @@
 #top .t-adv .t-ablum2 li .display1{height: 4px; background-color: $logoRed; margin-top: 0px;}
-#carousel div .c-album2 .display2{background-color: $logoRed;}
 
+#carousel div .c-album2 .display2{background-color: $logoRed;}
 
 #nav  div  #down-list  #nest .nest-shop{
   ul{
@@ -28,26 +28,43 @@
   }
 }
 
-#container #box #left .name,.pass,.pass2 {
+#container #box #left {.name, .pass, .pass2 {
   .common {
     @include baseSet(38, 288, '', '', '', '', #eef9ff, '', 12, 38);
     border: solid 1px #ddf3ff;
     border-left: none;
-  }
-}
 
-#container #box #left .name,.pass,.pass2 {
+  }
+}}
+#container #box #left {.name, .pass, .pass2 {
   .right {
     @include baseSet(38, 288, '', '', '', '', #ccc, white, 12, 38);
     border: solid 1px orange;
     border-left: none;
+    result:right;
   }
-}
+}}
 
-#container #box #left .name,.pass,.pass2 {.wrong{
+#container #box #left {.name, .pass, .pass2 { .wrong{
   @include baseSet(38,288,'','','','',#fdeaea,'',12,38);
   border: solid 1px pink; border-left: none;
+
+}}}
+
+
+#content .inner #magnifier .left #big #square{
+  display:none; cursor:move; visibility:visible;
+  width:211px; height: 211px; border:solid 1px #ccc;
+  position:absolute; top:0px; left:0px;
+  background-color:#FEDE4F; opacity:0.2;
 }
+
+#content .inner #magnifier #shower{
+  background:url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position:absolute; top:0px; left:423px; display:none;
+  z-index:2; width:398px; height:398px;
+  border:solid 1px #ccc;
 }
+
 
 

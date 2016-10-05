@@ -77,7 +77,8 @@ img {
 }
 #header .inner .base-info .flow ul li hr {
   margin-top: 10px;
-  height: 1px;
+  height: 2px;
+  border: none;
   background-color: #cccccc;
 }
 #header .inner .base-info .flow ul li a {

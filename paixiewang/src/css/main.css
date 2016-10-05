@@ -409,6 +409,44 @@ img {
   margin-left: 11px;
   margin-top: 4px;
 }
+#nav div #down-list #nest .second {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 209px;
+  width: 780px;
+  height: 665px;
+  background-color: white;
+  display: none;
+}
+#nav div #down-list #nest .second p {
+  clear: both;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#nav div #down-list #nest .second ul {
+  width: 505px;
+  border-top: 1px dotted #ccc;
+}
+#nav div #down-list #nest .second ul li {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+}
+#nav div #down-list #nest .second ul li:hover {
+  background-color: goldenrod;
+  color: white;
+}
+#nav div #down-list #nest .second .sec-adv {
+  position: absolute;
+  top: 10px;
+  left: 520px;
+}
 
 #bottom {
   height: 170px;
@@ -654,7 +692,7 @@ img {
   background-color: #e34242;
 }
 
-#container #box #left .name .common, .pass .common, .pass2 .common {
+#container #box #left .name .common, #container #box #left .pass .common, #container #box #left .pass2 .common {
   height: 38px;
   width: 288px;
   background-color: #eef9ff;
@@ -664,7 +702,7 @@ img {
   border-left: none;
 }
 
-#container #box #left .name .right, .pass .right, .pass2 .right {
+#container #box #left .name .right, #container #box #left .pass .right, #container #box #left .pass2 .right {
   height: 38px;
   width: 288px;
   background-color: #ccc;
@@ -673,9 +711,10 @@ img {
   line-height: 38px;
   border: solid 1px orange;
   border-left: none;
+  result: right;
 }
 
-#container #box #left .name .wrong, .pass .wrong, .pass2 .wrong {
+#container #box #left .name .wrong, #container #box #left .pass .wrong, #container #box #left .pass2 .wrong {
   height: 38px;
   width: 288px;
   background-color: #fdeaea;
@@ -683,6 +722,32 @@ img {
   line-height: 38px;
   border: solid 1px pink;
   border-left: none;
+}
+
+#content .inner #magnifier .left #big #square {
+  display: none;
+  cursor: move;
+  visibility: visible;
+  width: 211px;
+  height: 211px;
+  border: solid 1px #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FEDE4F;
+  opacity: 0.2;
+}
+
+#content .inner #magnifier #shower {
+  background: url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 423px;
+  display: none;
+  z-index: 2;
+  width: 398px;
+  height: 398px;
+  border: solid 1px #ccc;
 }
 
 /*# sourceMappingURL=main.css.map */

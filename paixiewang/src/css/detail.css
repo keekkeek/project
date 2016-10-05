@@ -409,6 +409,44 @@ img {
   margin-left: 11px;
   margin-top: 4px;
 }
+#nav div #down-list #nest .second {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 209px;
+  width: 780px;
+  height: 665px;
+  background-color: white;
+  display: none;
+}
+#nav div #down-list #nest .second p {
+  clear: both;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#nav div #down-list #nest .second ul {
+  width: 505px;
+  border-top: 1px dotted #ccc;
+}
+#nav div #down-list #nest .second ul li {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+}
+#nav div #down-list #nest .second ul li:hover {
+  background-color: goldenrod;
+  color: white;
+}
+#nav div #down-list #nest .second .sec-adv {
+  position: absolute;
+  top: 10px;
+  left: 520px;
+}
 
 #bottom {
   height: 170px;
@@ -587,6 +625,131 @@ img {
   line-height: 12px;
 }
 
+#top .t-adv .t-ablum2 li .display1 {
+  height: 4px;
+  background-color: #e7381c;
+  margin-top: 0px;
+}
+
+#carousel div .c-album2 .display2 {
+  background-color: #e7381c;
+}
+
+#nav div #down-list #nest .nest-shop ul .color1 {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color1 a {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color2 {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color2 a {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color3 {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color3 a {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color4 {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color4 a {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color5 {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color5 a {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color6 {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color6 a {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color7 {
+  color: white;
+  background-color: #e34242;
+}
+#nav div #down-list #nest .nest-shop ul .color7 a {
+  color: white;
+  background-color: #e34242;
+}
+
+#container #box #left .name .common, #container #box #left .pass .common, #container #box #left .pass2 .common {
+  height: 38px;
+  width: 288px;
+  background-color: #eef9ff;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px #ddf3ff;
+  border-left: none;
+}
+
+#container #box #left .name .right, #container #box #left .pass .right, #container #box #left .pass2 .right {
+  height: 38px;
+  width: 288px;
+  background-color: #ccc;
+  color: white;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px orange;
+  border-left: none;
+  result: right;
+}
+
+#container #box #left .name .wrong, #container #box #left .pass .wrong, #container #box #left .pass2 .wrong {
+  height: 38px;
+  width: 288px;
+  background-color: #fdeaea;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px pink;
+  border-left: none;
+}
+
+#content .inner #magnifier .left #big #square {
+  display: none;
+  cursor: move;
+  visibility: visible;
+  width: 211px;
+  height: 211px;
+  border: solid 1px #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FEDE4F;
+  opacity: 0.2;
+}
+
+#content .inner #magnifier #shower {
+  background: url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 423px;
+  display: none;
+  z-index: 2;
+  width: 398px;
+  height: 398px;
+  border: solid 1px #ccc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -667,16 +830,19 @@ img {
 }
 
 #content {
-  height: 21772px;
+  height: 21492px;
   overflow: hidden;
 }
 #content .inner {
-  height: 21772px;
+  height: 21492px;
 }
 #content .inner .road {
   color: #8e8e8e;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#content .inner .road a:hover {
+  color: red;
 }
 #content .inner #magnifier, #content .inner #summary, #content .inner #seller, #content .inner #introduce, #content .inner #explain {
   display: block;
@@ -685,19 +851,21 @@ img {
 #content .inner #magnifier {
   width: 424px;
   height: 534px;
+  position: relative;
 }
 #content .inner #magnifier .left {
   width: 424px;
 }
-#content .inner #magnifier .left .big, #content .inner #magnifier .left .small, #content .inner #magnifier .left .tip {
+#content .inner #magnifier .left #big, #content .inner #magnifier .left .small, #content .inner #magnifier .left .tip {
   width: 422px;
 }
-#content .inner #magnifier .left .big {
+#content .inner #magnifier .left #big {
   width: 422px;
   height: 422px;
   border: 1px solid #dadada;
+  position: relative;
 }
-#content .inner #magnifier .left .big img {
+#content .inner #magnifier .left #big img {
   width: 422px;
   height: 422px;
 }
@@ -705,10 +873,8 @@ img {
   height: 80px;
   overflow: hidden;
 }
-#content .inner #magnifier .left .small ul {
-  margin-top: 10px;
-}
 #content .inner #magnifier .left .small ul li {
+  margin-top: 10px;
   background: url("../image/detail/detail.png") no-repeat 0px -80px;
   display: block;
   float: left;
@@ -871,6 +1037,7 @@ img {
 #content .inner #summary .count button, #content .inner #summary .count input {
   display: block;
   float: left;
+  outline: none;
 }
 #content .inner #summary .count button {
   height: 30px;
@@ -890,7 +1057,7 @@ img {
   background: url("../image/detail/minus1.jpg") no-repeat;
 }
 #content .inner #summary .count .plus {
-  background: url("../image/detail/plus1.jpg") no-repeat;
+  background: url("../image/detail/plus2.jpg") no-repeat;
 }
 #content .inner #summary .buy, #content .inner #summary .push, #content .inner #summary .buy-way {
   display: block;
@@ -911,6 +1078,10 @@ img {
 }
 #content .inner #summary .push {
   background-color: #da720e;
+}
+#content .inner #summary .buy-way {
+  height: 40px;
+  line-height: 40px;
 }
 #content .inner #seller {
   height: 818px;
@@ -1005,32 +1176,79 @@ img {
   width: 975px;
   height: 240px;
   margin-top: -270px;
-  border: solid 1px #cccccc;
+  position: relative;
 }
-#content .inner #introduce div {
+#content .inner #introduce .intro-top {
+  width: 975px;
+  height: 38px;
+}
+#content .inner #introduce .intro-top #spxq, #content .inner #introduce .intro-top #yhpl, #content .inner #introduce .intro-top #spare, #content .inner #introduce .intro-top #gwbz, #content .inner #introduce .intro-top #zfps {
+  margin-top: 3px;
+  border-top: solid 1px #cccccc;
   display: block;
   float: left;
   height: 34px;
-  border-bottom: solid 1px #cc0000;
-  width: 138px;
+  border-right: solid 1px #cccccc;
+  width: 135px;
   line-height: 34px;
   text-align: center;
-  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cc0000;
 }
-#content .inner #introduce .spare {
-  border-right: none;
+#content .inner #introduce .intro-top #spxq {
+  border: solid 1px #cc0000;
+  border-bottom: none;
+  margin-top: 0px;
+  border-top: solid 3px #cc0000;
+  height: 35px;
+  color: #cc0000;
+}
+#content .inner #introduce .intro-top #spare {
   text-align: right;
-  width: 419px;
+  width: 429px;
+}
+#content .inner #introduce .intro-top #spare p {
+  height: 35px;
+  line-height: 35px;
+}
+#content .inner #introduce .intro-top #spare p img {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+#content .inner #introduce .txt1 {
+  position: absolute;
+  top: 37px;
+  display: none;
+  width: 973px;
+  height: 203px;
+  border: solid 1px #cccccc;
+  border-top: none;
+}
+#content .inner #introduce .txt1 ul {
+  display: block;
+  float: left;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+#content .inner #introduce .txt1 ul li {
+  line-height: 20px;
+}
+#content .inner #introduce .txt1 img {
+  width: 950px;
+  height: 185px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 #content .inner #explain {
   width: 965px;
   background-color: #fafafa;
 }
-#content .inner #explain ul {
+#content .inner #explain .flow {
   display: block;
   float: left;
+  margin-top: 30px;
 }
-#content .inner #explain img {
+#content .inner #explain .brief, #content .inner #explain .kstj {
   display: block;
   float: right;
 }

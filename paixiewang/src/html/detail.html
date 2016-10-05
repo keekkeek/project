@@ -13,19 +13,31 @@
                         <a class="h-slogan">深受网民喜爱的正品鞋服商城!</a>
                         <div class="h-login">
                             <a>Hi</a>
-                            <button>请登录</button>
+                            <button id="login">请登录</button>
                         </div>
                         <a class="h-sign"><span>[</span>注册<span>]</span></a>
                     </div>
                     <div class="h-part2">
                         <ul>
-                            <li><a>我的拍鞋</a><img src=""/></li>
-                            <li class="h-shopcar"><a>购物车<span>0</span>件</a></li>
-                            <li><img src=""/><a>会员俱乐部</a></li>
-                            <li><img src=""/><a>信息(<span>0</span>)</a></li>
-                            <li><img src=""/>公告(<span>0</span>)</li>
-                            <li><a>网站导航</a><img src=""/></li>
-                            <li class="h-mobile"><img src=""/><a>手机版</a></li>
+                            <li class="mine">
+                                <div class="div1">我的拍鞋<a class="img1"></a></div>
+                                <div class="div2">我的订单</div>
+                                <div class="div3">我的收藏</div>
+                                <div class="div4">我的优惠劵</div>
+                            </li><i class="break1">|</i>
+                            <li class="h-shopcar"><a><img src="../image/shopcar2.jpg"/>购物车<span>0</span>件</a></li><i class="break">|</i>
+                            <li><a><img src="../image/club1.jpg"/>会员俱乐部</a></li><i class="break">|</i>
+                            <li><a><img src="../image/message.jpg"/>信息(<span>0</span>)</a></li><i class="break">|</i>
+                            <li><img src="../image/notice.jpg"/>公告(<span>0</span>)</li><i class="break">|</i>
+                            <li class="web-guide">
+                                <div class="div1">网站导航<a class="img1"></a></div>
+                                <div class="div2">商家入驻</div>
+                                <div class="div3">了解拍鞋网</div>
+                                <div class="div4">拍鞋公益</div>
+                                <div class="div5">网站地图</div>
+                                <div class="div6">新手帮助</div>
+                            </li><i class="break2">|</i>
+                            <li class="h-mobile"><img src="../image/mobile.jpg"/>手机版</li>
                         </ul>
                     </div>
                 </div>
@@ -51,8 +63,8 @@
                     <div class="t-adv">
                         <ul class="t-ablum1">
                             <li><img src="../image/t-adv1.jpg"/></li>
-                            <li></li>
-                            <li></li>
+                            <li><img src="../image/t-adv2.jpg"/></li>
+                            <li><img src="../image/t-adv3.jpg"/></li>
                             <li><img src="../image/t-adv1.jpg"/></li>
                         </ul>
                         <ul class="t-ablum2">
@@ -167,17 +179,18 @@
             </div>
             <div id="content">
                 <div class="inner">
-                    <p class="road"><a>拍鞋首页</a><span>></span><a>漫格诱惑旗舰店</a><span>></span><a>漫格诱惑旗舰店单鞋</a></p>
+                    <p class="road"><a>拍鞋首页</a><span> > </span><a id="shopname">漫格诱惑旗舰店</a><span> > </span><a>漫格诱惑旗舰店单鞋</a></p>
                     <div id="magnifier">
                         <div class="left">
-                            <div class="big">
-                                <img src="../image/detail/shoe1.jpg"/>
+                            <div id="big">
+                                <img src="../image/detail/ddmf1-1.jpg"/>
+                                <div id="square" class="square"></div>
                             </div>
                             <div class="small">
                                 <ul>
-                                    <li><img src="../image/detail/shoe1.jpg"/></li>
-                                    <li><img src="../image/detail/shoe2.jpg"/></li>
-                                    <li><img src="../image/detail/shoe3.jpg"/></li>
+                                    <li><img src="../image/detail/ddmf1-1.jpg"/></li>
+                                    <li><img src="../image/detail/ddmf2-1.jpg"/></li>
+                                    <li><img src="../image/detail/ddmf3-1.jpg"/></li>
                                 </ul>
                             </div>
                             <div class="tip">
@@ -185,9 +198,7 @@
                                 <a class="store"><div></div>收藏(<span>1</span>)</a>
                             </div>
                         </div>
-                        <div class="right">
-
-                        </div>
+                        <div id="shower"></div>
                     </div>
                     <div id="summary">
                         <h3>漫格诱惑春秋新款卡通绒面圆头套脚豆豆鞋休闲百搭可爱平跟女单鞋</h3>
@@ -208,9 +219,9 @@
                         <div class="color">
                             <p>颜&nbsp;色：</p>
                             <ul>
-                                <li><img src="../image/detail/shoe4.jpg"/></li>
-                                <li><img src="../image/detail/shoe5.jpg"/></li>
-                                <li><img src="../image/detail/shoe6.jpg"/></li>
+                                <li><img src="../image/detail/shoe1-4.jpg" alt="古巴棕" title="古巴棕" /></li>
+                                <li><img src="../image/detail/shoe5.jpg" alt="梅红" title="梅红" /></li>
+                                <li><img src="../image/detail/shoe6.jpg" alt="红色" title="红色"/></li>
                             </ul>
                         </div>
                         <div class="size">
@@ -262,24 +273,67 @@
                         </div>
                     </div>
                     <div id="introduce">
-                        <div class="spxq">商品详情</div>
-                        <div class="yhpl">用户评论</div>
-                        <div class="gwbz">购物保障</div>
-                        <div class="zfps">支付与配送</div>
-                        <div class="spare">
-                            <p>手机下单更方便<img src=""/><img src=""/></p>
+                        <ul class="intro-top">
+                            <li id="spxq">商品详情</li>
+                            <li id="yhpl">用户评论</li>
+                            <li id="gwbz">购物保障</li>
+                            <li id="zfps">支付与配送</li>
+                            <li id="spare">
+                                <p>手机下单更方便<img src="../image/detail/spare.jpg"/></p>
+                            </li>
+                        </ul>
+                        <div class="txt1">
+                            <ul>
+                                <li>货号: 漫格诱惑 HWJ-H-29-23</li>
+                                <li>分类: 女鞋</li>
+                                <li>里料材质：PU</li>
+                                <li>帮高：低帮</li>
+                                <li>适用对象：青年</li>
+                                <li>帮面材质：绒面</li>
+                                <li>商品编码：1080771</li>
+                            </ul>
+                            <ul>
+                                <li>货号: 漫格诱惑 HWJ-H-29-23</li>
+                                <li>分类: 女鞋</li>
+                                <li>里料材质：PU</li>
+                                <li>帮高：低帮</li>
+                                <li>适用对象：青年</li>
+                                <li>帮面材质：绒面</li>
+                                <li>商品编码：1080771</li>
+                            </ul>
+                            <ul>
+                                <li>货号: 漫格诱惑 HWJ-H-29-23</li>
+                                <li>分类: 女鞋</li>
+                                <li>里料材质：PU</li>
+                                <li>帮高：低帮</li>
+                                <li>适用对象：青年</li>
+                                <li>帮面材质：绒面</li>
+                                <li>商品编码：1080771</li>
+                            </ul>
+                            <ul>
+                                <li>货号: 漫格诱惑 HWJ-H-29-23</li>
+                                <li>分类: 女鞋</li>
+                                <li>里料材质：PU</li>
+                                <li>帮高：低帮</li>
+                                <li>适用对象：青年</li>
+                                <li>帮面材质：绒面</li>
+                                <li>商品编码：1080771</li>
+                            </ul>
+                        </div>
+                        <div class="txt1">
+                            <img src="../image/detail/yhpl.png"/>
+                        </div>
+                        <div class="txt1">
+                            <img src="../image/detail/gwbz.png"/>
+                        </div>
+                        <div class="txt1">
+                            <img src="../image/detail/zfps.png"/>
                         </div>
                     </div>
                     <div id="explain">
-                        <ul>
-                            <li><a></a></li>
-                            <li><a>商品详情</a></li>
-                            <li><a>用户评论</a></li>
-                            <li><a>购物保障</a></li>
-                            <li><a>支付与配送</a></li>
-                            <li><a></a></li>
-                        </ul>
-                        <img src="../image/detail/brief.jpg"/>
+                        <img class="flow" src="../image/detail/flow.png"/>
+                        <img class="brief" src="../image/detail/brief.jpg"/>
+                        <!--<img class="kstj" src="../image/detail/kstj.jpg"/>-->
                     </div>
                 </div>
             </div>
@@ -403,7 +457,9 @@
         </div>
     </body>
 </html>
-
+<script src="../javascript/jquery-1.8.3.js"></script>
+<script src="../javascript/base.js"></script>
+<script src="../javascript/detail.js"></script>
 
 
 

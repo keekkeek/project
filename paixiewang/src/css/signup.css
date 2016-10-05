@@ -65,7 +65,7 @@
   background-color: #e34242;
 }
 
-#container #box #left .name .common, .pass .common, .pass2 .common {
+#container #box #left .name .common, #container #box #left .pass .common, #container #box #left .pass2 .common {
   height: 38px;
   width: 288px;
   background-color: #eef9ff;
@@ -75,7 +75,7 @@
   border-left: none;
 }
 
-#container #box #left .name .right, .pass .right, .pass2 .right {
+#container #box #left .name .right, #container #box #left .pass .right, #container #box #left .pass2 .right {
   height: 38px;
   width: 288px;
   background-color: #ccc;
@@ -84,9 +84,10 @@
   line-height: 38px;
   border: solid 1px orange;
   border-left: none;
+  result: right;
 }
 
-#container #box #left .name .wrong, .pass .wrong, .pass2 .wrong {
+#container #box #left .name .wrong, #container #box #left .pass .wrong, #container #box #left .pass2 .wrong {
   height: 38px;
   width: 288px;
   background-color: #fdeaea;
@@ -94,6 +95,32 @@
   line-height: 38px;
   border: solid 1px pink;
   border-left: none;
+}
+
+#content .inner #magnifier .left #big #square {
+  display: none;
+  cursor: move;
+  visibility: visible;
+  width: 211px;
+  height: 211px;
+  border: solid 1px #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FEDE4F;
+  opacity: 0.2;
+}
+
+#content .inner #magnifier #shower {
+  background: url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 423px;
+  display: none;
+  z-index: 2;
+  width: 398px;
+  height: 398px;
+  border: solid 1px #ccc;
 }
 
 * {

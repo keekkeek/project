@@ -121,6 +121,18 @@ img{ border:none;}
         }
       }
       img{ margin-left: 11px; margin-top: 4px;}
+      .second{z-index: 100; position: absolute; top: 0px; left: 209px; width: 780px; height: 665px;
+        background-color: white; display: none;
+        p{ clear: both; font-weight: bold; font-size: 14px; margin-top: 20px;}
+        ul{width: 505px; border-top: 1px dotted #ccc;
+          li{ @include dis-flo(left); height: 20px; line-height: 20px;
+          padding-left: 5px; padding-right: 5px; color: black;
+            &:hover{ background-color: goldenrod; color: white;}
+          }
+        }
+        .sec-adv{position: absolute; top:10px;left: 520px;
+        }
+      }
   }
 
 #bottom{@include baseSet(170,'','',10,'','',#656a76,$grey,'','');

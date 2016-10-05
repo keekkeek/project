@@ -1,6 +1,7 @@
 @import "variable";
 @import "mixin";
 @import "handler";
+@import "util";
 
 *{margin:0; padding:0;}
 body{font-size:12px; margin: 0 auto;}
@@ -34,19 +35,21 @@ img{ border:none;}
 }
 
 
-#content{ height: 21772px; overflow: hidden;
-  .inner{  height: 21772px;
-    .road{ color: $detail-grey; margin-top: 10px; margin-bottom: 10px;}
+#content{ height: 21492px; overflow: hidden;
+  .inner{  height: 21492px;
+    .road{ color: $detail-grey; margin-top: 10px; margin-bottom: 10px;
+    a{ &:hover{ color: red;}}
+    }
     #magnifier,#summary,#seller,#introduce,#explain{ @include dis-flo(left);}
-    #magnifier{ width: 424px; height: 534px;
+    #magnifier{ width: 424px; height: 534px; position: relative;
      .left{ width: 424px;
-      .big,.small,.tip{ width: 422px;}
-      .big{ width: 422px; height: 422px; border: 1px solid $border;
+      #big,.small,.tip{ width: 422px;}
+      #big{ width: 422px; height: 422px; border: 1px solid $border; position: relative;
         img{ width: 422px; height: 422px;}
       }
       .small{ height: 80px; overflow: hidden;
-        ul { margin-top: 10px;
-          li{
+        ul {
+          li{ margin-top: 10px;
             background: url('../image/detail/detail.png') no-repeat 0px -80px;
           @include dis-flo(left); width: 60px; height: 60px; margin-right: 10px;
             img{width: 58px; height: 58px; margin-top: 1px; margin-left: 1px;}
@@ -104,11 +107,11 @@ img{ border:none;}
         }}
       }
       .count{height: 30px; line-height: 30px; margin-bottom: 32px;
-        button,input{@include dis-flo(left);}
+        button,input{@include dis-flo(left); outline: none;}
         button{ height: 30px; width: 30px; border: none;}
         input{ outline: none; @include baseSet(28,48,'','','','','','',12,28); border: solid 1px $detail-grey; text-align: center;}
         .minus{ background: url('../image/detail/minus1.jpg') no-repeat;}
-        .plus{ background: url('../image/detail/plus1.jpg') no-repeat;}
+        .plus{ background: url('../image/detail/plus2.jpg') no-repeat;}
       }
       .buy,.push,.buy-way{@include dis-flo(left);
         margin-right: 10px;
@@ -117,6 +120,7 @@ img{ border:none;}
       }
       .buy{ background-color: #cc0000; margin-left: 50px;}
       .push{ background-color: #da720e;}
+      .buy-way{ height: 40px; line-height: 40px;}
     }
 
     #seller{ @include baseSet(818,198,20,'','','','','','','');
@@ -147,17 +151,29 @@ img{ border:none;}
         p{ margin-top: 28px; text-align: center;}
       }
     }
-    #introduce{width:975px; height: 240px; margin-top: -270px;
-      border: solid 1px $grey;
-      div{
-        @include dis-flo(left); height: 34px; border-bottom: solid 1px #cc0000;
-        width: 138px; line-height: 34px; text-align: center;  border-right: solid 1px $grey;
+    #introduce{width:975px; height: 240px; margin-top: -270px; position: relative;
+      .intro-top{width:975px; height: 38px;
+      #spxq,#yhpl,#spare,#gwbz,#zfps{ margin-top: 3px; border-top: solid 1px $grey;
+        @include dis-flo(left); height: 34px; border-right: solid 1px $grey;
+        width: 135px; line-height: 34px; text-align: center; border-bottom: solid 1px #cc0000;
       }
-      .spare{ border-right: none; text-align: right; width: 419px;}
+      #spxq{ border: solid 1px #cc0000; border-bottom: none; margin-top: 0px;
+         border-top: solid 3px#cc0000; height: 35px; color: #cc0000;
+      }
+      #spare{ text-align: right; width: 429px;
+        p{ height: 35px; line-height:35px; img{ float: right; margin-top: 5px; margin-right: 20px;}}
+      }
+      }
+      .txt1{ position: absolute; top: 37px;
+        display: none;
+        width:973px; height: 203px; border: solid 1px $grey; border-top: none;
+        ul{@include dis-flo(left);  margin-top: 30px; margin-left: 60px; li{ line-height: 20px;}}
+        img{ width: 950px; height: 185px; margin-top: 5px; margin-left: 5px;}
+      }
     }
     #explain{ width: 965px; background-color: #fafafa;
-      ul{@include dis-flo(left);}
-      img{@include dis-flo(right);}
+      .flow{ @include dis-flo(left); margin-top:30px;}
+      .brief,.kstj{@include dis-flo(right);}
     }
   }
 }
