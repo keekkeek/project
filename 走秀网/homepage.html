@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" 
+		content="width = devie-width,initial-scale=1,minumum-scale=1,maximum-scale=1,user-scalable = no, minimal-ui" />
+		<title>走秀网</title>
+		<link rel="stylesheet" href="css/public.css"/>
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/animate.min.css"/>
+		<style type="text/css">
+			.swiper-container{ width: 100%; height: 100%; background-color: #f8f3f7;}
+			.swiper-pagination-bullet-active{background-color: #e43669;}
+			.swiper-slide:nth-of-type(1){ background:url(img/00_01.jpg) no-repeat 0px 0px;
+			background-size: 100% auto;}
+			.a{margin-left: 5.625rem; margin-top: 18.125rem; height: 1.6875rem; width: 10.7rem;}
+			.b{margin-left: 1.0rem; margin-top: /*20.78*/1rem; height: 1.90rem; width: 10.85rem;}
+			.c{margin-top: 3.1875rem; margin-left: 7rem; width: 5.8125rem; height: 5.8125rem;}
+			.d{margin-top: 1.125rem; margin-left: 6.5rem; width: 6.9375rem; height: 6.9375rem;}
+			.e{margin-top: 2.65rem; margin-left: 2.34rem; width: 12.5625rem; height: 6.8125rem;}
+			.f{margin-top: 4.875rem; margin-left: 6.3125rem; width: 7.375rem; height: 1.468rem;}
+			.g{margin-top: 2.6875rem; margin-left: 4rem; width: 11.75rem; height: 9.34rem;}
+			.h{margin-top: 1.125rem; margin-left: 5.22rem; height: 6.031rem; width: 8.968rem;}
+			.i{margin-top: 5.6975rem; margin-left: 9.6rem; height: 3.5625rem; width: 1.125rem;}
+			.j{margin-top: 3.125rem; margin-left: 3.375rem; height: 1.125rem; width: 13.90rem;}
+			.start{height: 3rem; width: 9rem; position: absolute; top: 22.5rem; color: #FFFFFF;
+			 left:50%; margin-left: -4.5rem; border-radius: 0.3rem; line-height: 3rem;
+			 font-size: 1.125rem; text-align: center; border: none; outline: none;
+			 background-image: -webkit-linear-gradient(90deg,#f75f88 0%,#d81250 100%);}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container banner" id="banner">
+			<div class="swiper-wrapper" id="slides">
+				<div class="swiper-slide">
+					<img class="a ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "0s" src="img/00_02.jpg"></img>
+					<img class="b ani" swiper-animate-effect = "tada" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "0s" src="img/00_03.jpg"></img>
+				</div>
+				<div class="swiper-slide">
+					 <img class="c ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "0s" src="img/00_04.jpg"></img>
+					 <img class="d ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "2s" src="img/00_05.jpg"></img>
+					 <img class="e ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "4s" src="img/00_06.jpg"></img>
+				</div>
+				<div class="swiper-slide">
+					 <img class="f ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "0s" src="img/00_07.jpg"></img>
+					 <img class="g ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "2s" src="img/00_08.jpg"></img>
+					 <img class="h ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "4s" src="img/00_09.jpg"></img>
+				</div>
+				<div class="swiper-slide">
+					 <img class="i ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "0s" src="img/00_10.jpg"></img>
+					 <img class="j ani" swiper-animate-effect = "bounceIn" swiper-animate-duration = "2s"
+					 swiper-animate-delay = "2s" src="img/00_11.jpg"></img>			
+					 <button class="start" id="start">开始体验</button>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<script type="text/javascript" src="js/lib/zepto.min.js"></script>
+		<script type="text/javascript" src="js/lib/swiper.min.js"></script>
+		<script type="text/javascript" src="js/lib/swiper.animate.min.js"></script>
+		<script type="text/javascript" src="js/lib/homepage.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,37 @@
+*{ margin: 0; padding: 0; font-family: "微软雅黑";}
+ul li{ list-style: none;}
+html{ font-size: 16px; font-family: "微软雅黑";}
+.top,header,.search,.main,footer{width: 100%;}
+.top{height: 1.25rem; position: fixed; left: 0rem; top: 0rem; right: 0rem;
+border-bottom: solid 0.0625rem #52525A;}
+.top img{height: 1.25rem; width: 100%;}
+header{position: fixed; left: 0rem; top: 1.3125rem; right: 0rem;
+line-height: 2.6875rem; font-size: 1.125rem; font-weight: 600;
+height: 2.6875rem; background-color: #e4366b; color: white; text-align: center;}
+.search{ position: fixed; left: 0rem; top: 4rem; right: 0rem;
+height: 2.6875rem; background-color:#52525a; border-top: solid 0.0625rem #000000;
+border-bottom: solid 0.0625rem #000000;}
+.search .box1{ background-color: #FFFFFF; height: 1.75rem; width: 92%; 
+margin-left: 4%; margin-top:0.46875rem; border-radius: 1.75rem;}
+.search .box1 img,input{ float: left; display: block;}
+.search .box1 img{ height: 1.625rem; width: 1.0625rem; margin-top: 0.0625rem;
+ margin-left: 4.406%;}
+.search .box1 input{ border: none; height: 100%; line-height: 100%; outline: none;
+width: 83%; margin-left: 2.5%;} 
+.search .box1 input::-webkit-input-placeholder{ color:#000000;}
+footer{ height: 3.175rem; position: fixed; bottom: 0rem; left: 0rem; right: 0rem;
+background-color: #484850; display: -webkit-box;}
+footer .box{ -webkit-box-flex: 1; height: 3rem; margin-top: 0.175rem; position: relative;}
+footer .red{margin-top: 0rem; border-top: 0.175rem solid #e4366b;}
+footer .box img{ height: 1.5rem; width: 1.5rem; display: block;
+position: absolute; left: 50%; top: 0rem; margin-left: -0.75rem;}
+footer .box p{ color: #FFFFFF; font-size: 0.8125rem; width: 100%; margin-top: 1.8rem; 
+text-align: center; font-weight: 500;}
+
+footer .box2{ border-right: solid 0.0625rem #000000;
+	-webkit-box-flex: 1; height: 3rem; padding-top: 0.175rem; position: relative;}
+footer .box2 .p2{color: #FFFFFF; margin-top: 0rem; line-height: 2.75rem;
+text-align: center; font-size: 1.25rem; height: 3rem; width: 100%;
+background-image: -webkit-linear-gradient(90deg,#65646a 0%,#4a4a52 100%);}
+footer .box2:nth-of-type(3){ border-right: none;}
+footer .red2{padding-top: 0rem;border-top: 0.175rem solid #e4366b;}
