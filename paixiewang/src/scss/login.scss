@@ -25,7 +25,7 @@ body{ height: 652px; background-color: $loginBC;}
         border: 1px solid $border; .icon,input{@include dis-flo(left)}
         .icon{ width: 34px; height: 35px; background: url(../image/paixiewang2.png) no-repeat 0 -1px;}
         .input1,.input2{ border: none; @include baseSet(36,260,'','','','','',$grey,14,36);
-        outline: none;
+        outline: none;color: black;
         }
       }
       .pass{.icon{ background-position: 0px -40px;}}

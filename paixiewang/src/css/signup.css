@@ -109,6 +109,7 @@
   left: 0px;
   background-color: #FEDE4F;
   opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 
 #content .inner #magnifier #shower {

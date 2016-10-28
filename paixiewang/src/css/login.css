@@ -112,6 +112,7 @@ body {
   font-size: 14px;
   line-height: 36px;
   outline: none;
+  color: black;
 }
 #container #box #infos .pass .icon {
   background-position: 0px -40px;

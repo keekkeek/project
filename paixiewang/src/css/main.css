@@ -58,7 +58,7 @@ img {
 }
 #header div .h-part1 .h-login {
   height: 15px;
-  width: 56px;
+  width: 61px;
   margin-top: 6px;
   margin-left: 10px;
   background-color: #d91515;
@@ -82,7 +82,7 @@ img {
   width: 15px;
 }
 #header div .h-part1 .h-login button {
-  width: 40px;
+  width: 45px;
   background-color: #f7f7f7;
   outline: none;
 }
@@ -419,7 +419,11 @@ img {
   background-color: white;
   display: none;
 }
+#nav div #down-list #nest .second p, #nav div #down-list #nest .second ul {
+  margin-left: 30px;
+}
 #nav div #down-list #nest .second p {
+  padding-left: 5px;
   clear: both;
   font-weight: bold;
   font-size: 14px;
@@ -428,12 +432,14 @@ img {
 #nav div #down-list #nest .second ul {
   width: 505px;
   border-top: 1px dotted #ccc;
+  margin-bottom: 20px;
 }
 #nav div #down-list #nest .second ul li {
   display: block;
   float: left;
   height: 20px;
   line-height: 20px;
+  margin-top: 3px;
   padding-left: 5px;
   padding-right: 5px;
   color: black;
@@ -625,6 +631,126 @@ img {
   line-height: 12px;
 }
 
+#toolbar div, #toolbar2 div {
+  background-color: #7a6e6e;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-bottom: 2px;
+  border-radius: 3px 0px 0px 3px;
+}
+#toolbar div em, #toolbar2 div em {
+  border-radius: 3px 0px 0px 3px;
+  font-style: normal;
+  height: 35px;
+  width: 62px;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+}
+#toolbar div a, #toolbar2 div a {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: block;
+  background: url(../image/toolbars.png) no-repeat -90px -176px;
+  border-radius: 3px 0px 0px 3px;
+  z-index: 101;
+}
+
+#toolbar {
+  height: 216px;
+  width: 35px;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  margin-top: -108px;
+}
+#toolbar div .toola2 {
+  background-position: -50px 0px;
+}
+#toolbar div .toola3 {
+  background-position: -50px -50px;
+}
+#toolbar div .toola4 {
+  background-position: -50px -100px;
+}
+#toolbar div .toola5 {
+  background-position: -190px -150px;
+}
+#toolbar div .toola6 {
+  background-position: -50px -150px;
+}
+
+#toolbar2 {
+  height: 108px;
+  width: 35px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+#toolbar2 div p {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: block;
+  border-radius: 3px 0px 0px 3px;
+  text-align: center;
+  line-height: 17px;
+  color: #fff;
+  background-color: #c81623;
+}
+#toolbar2 div .toola7 {
+  background-position: -50px -250px;
+}
+#toolbar2 div .toola8 {
+  background-position: -50px -300px;
+}
+
+#toolbar3 {
+  display: none;
+  height: 180px;
+  width: 30px;
+  position: fixed;
+  top: 50%;
+  margin-top: -80px;
+  left: 50%;
+  margin-left: -635px;
+}
+#toolbar3 ul li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+#toolbar3 ul li a {
+  position: absolute;
+  height: 29px;
+  width: 30px;
+  text-align: center;
+  line-height: 29px;
+}
+#toolbar3 ul li .floor1 {
+  display: block;
+}
+#toolbar3 ul li .front1 {
+  display: none;
+}
+#toolbar3 ul li .toolbar3space {
+  height: 0px;
+  width: 20px;
+  margin: 0 auto;
+  margin-top: 29px;
+  border-top: dotted 1px #ccc;
+}
+
 #top .t-adv .t-ablum2 li .display1 {
   height: 4px;
   background-color: #e7381c;
@@ -736,6 +862,7 @@ img {
   left: 0px;
   background-color: #FEDE4F;
   opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 
 #content .inner #magnifier #shower {

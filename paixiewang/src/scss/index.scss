@@ -5,7 +5,7 @@ body{
   overflow-x: hidden;
 }
 
-#container{ height: 4614px;}
+#container{ height: 4614px; border-right: solid 6px #7a6e6e; position: relative;}
 
 #carousel,#activity,#womanShop,#sportShop,#manShop,#outdoorShop,#clotheShop,#childShop,#focus,#trifle{ width: 100%;
   div{ width: 1200px; margin: 0 auto;}
@@ -174,3 +174,6 @@ body{
     .tr-square1{ margin-right: 0px;}
   }
 }
+
+
+

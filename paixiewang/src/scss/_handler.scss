@@ -17,10 +17,10 @@ img{ border:none;}
     .h-part1{ @include baseSet(30,430,'','',30,'','','','',30);
       .h-slogan, .h-login, .h-sign{@include dis-flo(left); height: 30px; line-height: 30px;}
       .h-slogan{ width: 165px;}
-      .h-login{ @include baseSet(15,56,10,6,'','',$headerRed,white,12,15); border: 1px solid #d91515; border-radius: 3px;
+      .h-login{ @include baseSet(15,61,10,6,'','',$headerRed,white,12,15); border: 1px solid #d91515; border-radius: 3px;
         a,button{ @include dis-flo(left); @include baseSet(15,'','','','','','','',12,15); text-align: center; border: none;}
         a{font-weight: bold; width: 15px;}
-        button{width: 40px; background-color: #f7f7f7; outline: none;}
+        button{width: 45px; background-color: #f7f7f7; outline: none;}
       }
       .h-sign{@include baseSet(30,46,6,'','','','',$headerRed,'',30);
         span{color: black;}
@@ -123,9 +123,11 @@ img{ border:none;}
       img{ margin-left: 11px; margin-top: 4px;}
       .second{z-index: 100; position: absolute; top: 0px; left: 209px; width: 780px; height: 665px;
         background-color: white; display: none;
-        p{ clear: both; font-weight: bold; font-size: 14px; margin-top: 20px;}
-        ul{width: 505px; border-top: 1px dotted #ccc;
+        p,ul{ margin-left: 30px;}
+        p{ padding-left: 5px; clear: both; font-weight: bold; font-size: 14px; margin-top: 20px;}
+        ul{width: 505px; border-top: 1px dotted #ccc; margin-bottom: 20px;
           li{ @include dis-flo(left); height: 20px; line-height: 20px;
+            margin-top: 3px;
           padding-left: 5px; padding-right: 5px; color: black;
             &:hover{ background-color: goldenrod; color: white;}
           }
@@ -187,6 +189,50 @@ img{ border:none;}
     }
   }
 }
+
+#toolbar,#toolbar2{
+  div{background-color:#7a6e6e; position:relative; height:35px; width:35px;
+    margin-bottom:2px;border-radius: 3px 0px 0px 3px;
+    em{border-radius: 3px 0px 0px 3px;font-style:normal; height:35px; width:62px; position:absolute; top:0px; left:35px; color:#fff; line-height:35px; text-align:center;}
+    a{display:inline-block; cursor:pointer;  position:relative; height:35px; width:35px; display:block;
+      background:url(../image/toolbars.png) no-repeat -90px -176px; border-radius: 3px 0px 0px 3px;  z-index:101;}
+
+  }
+}
+
+#toolbar{height:216px; width:35px; position:fixed; right:0px; top:50%; margin-top:-108px;
+  div{
+    .toola2{ background-position: -50px 0px;}
+    .toola3{ background-position: -50px -50px;}
+    .toola4{ background-position: -50px -100px;}
+    .toola5{ background-position: -190px -150px;}
+    .toola6{ background-position: -50px -150px;}
+  }
+}
+
+#toolbar2{height:108px; width:35px; position:fixed; right:0px; bottom:0px;
+  div{
+    p{display:inline-block; cursor:pointer;
+      position:relative; height:35px; width:35px; display:block;border-radius: 3px 0px 0px 3px;
+      text-align:center; line-height:17px; color:#fff; background-color:#c81623;}
+    .toola7{ background-position: -50px -250px;}
+    .toola8{ background-position: -50px -300px;}
+
+  }
+}
+
+#toolbar3{display:none; height:180px; width:30px;position:fixed;
+  top:50%; margin-top:-80px; left:50%; margin-left:-635px;
+  ul{ li{position:relative; width:30px; height:30px; overflow:hidden;
+    a{position:absolute;  height:29px; width:30px; text-align:center; line-height:29px;}
+    .floor1{display:block;}
+    .front1{display: none;}
+    .toolbar3space{height:0px; width:20px; margin:0 auto; margin-top:29px; border-top:dotted 1px #ccc;}
+  }
+  }
+}
+
+
 
 
 

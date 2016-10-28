@@ -56,7 +56,7 @@
   display:none; cursor:move; visibility:visible;
   width:211px; height: 211px; border:solid 1px #ccc;
   position:absolute; top:0px; left:0px;
-  background-color:#FEDE4F; opacity:0.2;
+  background-color:#FEDE4F; opacity:0.2; filter:alpha(opacity=20);
 }
 
 #content .inner #magnifier #shower{
@@ -65,6 +65,11 @@
   z-index:2; width:398px; height:398px;
   border:solid 1px #ccc;
 }
+
+
+
+
+
 
 
 

@@ -128,7 +128,7 @@ img {
   height: 102px;
   position: relative;
 }
-#shop-car .inner #goods .order .second .text .ckb2, #shop-car .inner #goods .order .second .text .img1, #shop-car .inner #goods .order .second .text .explain {
+#shop-car .inner #goods .order .second .text .ckb2, #shop-car .inner #goods .order .second .text .img1, #shop-car .inner #goods .order .second .text .explain, #shop-car .inner #goods .order .second .text .a4, #shop-car .inner #goods .order .second .text .amount {
   display: block;
   float: left;
 }
@@ -166,12 +166,72 @@ img {
   left: 82px;
 }
 #shop-car .inner #goods .order .second .text .a4 {
+  font-size: 14px;
   display: block;
   position: absolute;
   font-weight: bold;
   top: 40px;
   left: 500px;
   height: 12px;
+}
+#shop-car .inner #goods .order .second .text .amount {
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: 672px;
+}
+#shop-car .inner #goods .order .second .text .amount button, #shop-car .inner #goods .order .second .text .amount input {
+  display: block;
+  float: left;
+  outline: none;
+}
+#shop-car .inner #goods .order .second .text .amount button {
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+#shop-car .inner #goods .order .second .text .amount .value {
+  outline: none;
+  height: 28px;
+  width: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  border: solid 1px #8e8e8e;
+  text-align: center;
+}
+#shop-car .inner #goods .order .second .text .amount .minus {
+  background: url("../image/detail/minus2.jpg") no-repeat;
+}
+#shop-car .inner #goods .order .second .text .amount .plus {
+  background: url("../image/detail/plus2.jpg") no-repeat;
+}
+#shop-car .inner #goods .order .second .text .text-price {
+  font-size: 14px;
+  height: 14px;
+  position: absolute;
+  top: 40px;
+  left: 810px;
+  color: red;
+  font-weight: bold;
+}
+#shop-car .inner #goods .order .second .text .store, #shop-car .inner #goods .order .second .text .del {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  left: 897px;
+  height: 14px;
+  line-height: 14px;
+}
+#shop-car .inner #goods .order .second .text .store {
+  top: 33px;
+}
+#shop-car .inner #goods .order .second .text .del {
+  top: 52px;
+}
+#shop-car .inner #goods .order .second .text .del:hover {
+  text-decoration: underline;
+  color: blue;
 }
 #shop-car .inner .general2 {
   height: 42px;
@@ -192,8 +252,6 @@ img {
 }
 #shop-car .inner .general2 .chosen .span1, #shop-car .inner .general2 .chosen .span2 {
   color: #f34e0f;
-}
-#shop-car .inner .general2 .chosen .span2 {
   font-size: 18px;
   font-weight: bold;
 }

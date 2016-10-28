@@ -5,6 +5,36 @@
 /*效果:onmouseover一个窗口，窗口会显示display为block,离开为none*/
 
 window.onload = function() {
+    //jQuery UI使用搜索
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "C#",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Jquery",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $("#tags").autocomplete({
+            source: availableTags
+        })
     //登录按钮：
     $("#login").click(function () {
         window.location.href = "html/login.html";
@@ -218,16 +248,16 @@ window.onload = function() {
     });
 
     //nav中的所有商品分类
-    $("#down-list").mouseover(function () {
+    $("#down-list").mouseover(function(){
         $("#nest").css({display: "block"});
         for (var i=0;i<7;i++){
             $(".nest-shop").eq(i).mouseover(function(){
                 var index = $(this).index();
-                console.log(index);
                 for(var j=0;j<7;j++){
                     $(".second").eq(j).css({display:"none"});
                 }
                 $(".second").eq(index).css({display:"block"});
+
             });
         }
     });
@@ -235,40 +265,90 @@ window.onload = function() {
         $("#nest").css({display: "none"});
     });
 
+    /*$(".second").mouseout(function(){
+        $(this).css({display:"none"});
+    })*/
     //去除广告
     $("#advertise .ad-del").click(function(){
         $("#ad-div1").slideToggle();
     });
 
-    //jQuery UI使用搜索
-    $( function() {
-        var availableTags = [
-            "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"
-        ];
-        $( "#tags" ).autocomplete({
-            source: availableTags
+    //工具箱1:
+    $(".tool1").each(function(i){
+        $(this).bind({
+            mouseover:function(){
+                $(this).css({"backgroundColor":"#c81823","borderRadius":"0px"});
+                $(".tool1 a").eq(i).css({"backgroundColor":"#c81823"});
+                $(".tool1 em").eq(i).css({"backgroundColor":"#c81823"});
+                $(".tool1 em").eq(i).animate({"left":"-62px"},500);
+            },
+            mouseout:function(){
+                $(this).css({"backgroundColor":"#7a6e6e","borderRadius":"3px 0px 0px 3px"});
+                $(".tool1 a").eq(i).css({"backgroundColor":"#7a6e6e"});
+                $(".tool1 em").eq(i).css({"backgroundColor":"#7a6e6e"});
+                $(".tool1 em").eq(i).animate({"left":"35px"},500);
+            }
         });
-    } );
+    });
+    //工具箱2:
+    $(".toola7").click(function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop =0;
+    });
+
+    //工具箱3:
+    window.onscroll = function(){
+        var scrollTop = document.documentElement.scrollTop  || document.body.scrollTop;
+        var a_top = parseInt(document.getElementById("activity").offsetTop);
+
+        if(scrollTop >=a_top){
+            $("#toolbar3").css({display:"block"});
+        }else{
+            $("#toolbar3").css({display:"none"});
+        }
+    }
+
+    $("#toolbar3 li").each(function(i){
+        $(this).bind({
+            mouseover:function(){
+                $(this).css({"backgroundColor":"#c81623"});
+                $(".floor1").eq(i).css({"display":"none"});
+                $(".front1").eq(i).css({"display":"block","color":"#fff"});
+            },
+            mouseout:function(){
+                $(this).css({"backgroundColor":"#fff"});
+                $(".floor1").eq(i).css({"display":"block"});
+                $(".front1").eq(i).css({"display":"none"});
+            }
+        });
+    });
+
+    //调整到相应的列表
+    var arr_shop = ['womanShop','sportShop','manShop','outdoorShop','clotheShop','childShop'];
+    $(".front1").each(function(i){
+        $(this).attr("href","#"+arr_shop[i]);
+    });
+
+    //跳转到详情页面：
+    $("#td1").click(function(){
+        window.location.href = "html/detail.html";
+    });
+    //跳转到详购物页面
+    $("#shopcar").click(function(){
+        window.location.href = "html/shopcar.html";
+    });
+
+    $("td").each(function(i){
+        $(this).bind({
+            mouseover:function(){
+                $(this).css({"opacity":"0.7","filter":"alpha(opacity="+70+")"});
+            },
+            mouseout:function(){
+                $(this).css({"opacity":"1","filter":"alpha(opacity="+100+")"});
+            }
+        }
+        )
+    });
+
 
 }

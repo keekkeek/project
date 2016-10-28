@@ -76,3 +76,23 @@ var utility = {
     }
 }
 
+function _move(obj,json,fn){
+    clearInterval(obj.timer1);
+    obj.timer1 = setInterval(
+        function(){
+            for(var att in json){
+                var _value = parseInt(_getStyle(obj,att));
+                var speed = (json[att]-_value)/10;
+                speed = speed > 0 ? Math.ceil(speed): Math.floor(speed);
+                if(_value == json[att]){
+                    clearInterval(obj.timer1);
+                    if(fn){
+                        fn();
+                    }
+                }else{
+                    obj.style[att] = _value + speed + "px";
+                }
+            }
+        },100);
+}
+

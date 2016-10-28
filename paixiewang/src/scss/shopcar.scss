@@ -42,7 +42,7 @@ img{ border:none;}
             }
           }
           .text{ width: 981px; height: 102px; position: relative;
-            .ckb2,.img1,.explain{@include dis-flo(left);}
+            .ckb2,.img1,.explain,.a4,.amount{@include dis-flo(left);}
             .ckb2{ margin-left: 10px; margin-top: 50px;}
             .img1{ border:1px solid #ccc; width: 80px; height: 80px; margin-top: 11px; margin-left:10px;}
             .explain{@include baseSet(80,310,20,11,'','','','','',''); position: relative;
@@ -50,7 +50,21 @@ img{ border:none;}
               .a2,.a3{ display: block; position: absolute; top:60px; left: 10px; height: 12px;}
               .a3{ left: 82px;}
             }
-            .a4{display: block; position: absolute; font-weight: bold; top:40px; left: 500px; height: 12px;}
+            .a4{font-size:14px; display: block; position: absolute; font-weight: bold; top:40px; left: 500px; height: 12px;}
+            .amount{ width: 90px; height: 30px; position: absolute; top: 40px; left: 672px;
+              button,input{@include dis-flo(left); outline: none;}
+                button{ height: 30px; width: 30px; border: none;}
+                .value{ outline: none; @include baseSet(28,28,'','','','','','',12,28);
+                  border: solid 1px $detail-grey; text-align: center;}
+              .minus{ background: url('../image/detail/minus2.jpg') no-repeat;}
+              .plus{ background: url('../image/detail/plus2.jpg') no-repeat;}
+            }
+            .text-price{ font-size: 14px; height: 14px; position: absolute; top: 40px; left: 810px; color: red; font-weight: bold;}
+            .store,.del{position: absolute; text-align: center; width: 60px; left: 897px; height: 14px; line-height: 14px;}
+            .store{ top: 33px;}
+            .del{ top: 52px;
+                &:hover{ text-decoration: underline; color: blue;}
+            }
           }
         }
       }
@@ -60,8 +74,7 @@ img{ border:none;}
       .all{ margin-left: 16px;}
       .del,.continue{ margin-left: 8px;}
       .chosen{ margin-left: 365px;
-        .span1,.span2{color: #f34e0f;}
-        .span2{ font-size: 18px; font-weight: bold;}
+        .span1,.span2{color: #f34e0f; font-size: 18px; font-weight: bold;}
       }
       .pay{
         @include dis-flo(right); border: none; outline: none;

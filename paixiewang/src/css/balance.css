@@ -19,7 +19,7 @@
   width: 983px;
   background-color: #f9f9f9;
 }
-#info .inner .address form .label1, #info .inner .address form .label2, #info .inner .address form .label3, #info .inner .address form .label4, #info .inner .address form .label5, #info .inner .address form .label6, #info .inner .address form .label7, #info .inner .address form .label8, #info .inner .address form .input1, #info .inner .address form .input2, #info .inner .address form .input3, #info .inner .address form .input4, #info .inner .address form .input5, #info .inner .address form .select {
+#info .inner .address form .test, #info .inner .address form .test1, #info .inner .address form .label1, #info .inner .address form .label2, #info .inner .address form .label3, #info .inner .address form .label4, #info .inner .address form .label5, #info .inner .address form .label6, #info .inner .address form .label7, #info .inner .address form .label8, #info .inner .address form .input1, #info .inner .address form .input2, #info .inner .address form .input3, #info .inner .address form .input4, #info .inner .address form .input5, #info .inner .address form .select {
   outline: none;
   height: 25px;
   margin-top: 15px;
@@ -27,7 +27,7 @@
   display: block;
   float: left;
 }
-#info .inner .address form .label1 .star, #info .inner .address form .label2 .star, #info .inner .address form .label3 .star, #info .inner .address form .label4 .star, #info .inner .address form .label5 .star, #info .inner .address form .label6 .star, #info .inner .address form .label7 .star, #info .inner .address form .label8 .star, #info .inner .address form .input1 .star, #info .inner .address form .input2 .star, #info .inner .address form .input3 .star, #info .inner .address form .input4 .star, #info .inner .address form .input5 .star, #info .inner .address form .select .star {
+#info .inner .address form .test .star, #info .inner .address form .test1 .star, #info .inner .address form .label1 .star, #info .inner .address form .label2 .star, #info .inner .address form .label3 .star, #info .inner .address form .label4 .star, #info .inner .address form .label5 .star, #info .inner .address form .label6 .star, #info .inner .address form .label7 .star, #info .inner .address form .label8 .star, #info .inner .address form .input1 .star, #info .inner .address form .input2 .star, #info .inner .address form .input3 .star, #info .inner .address form .input4 .star, #info .inner .address form .input5 .star, #info .inner .address form .select .star {
   color: #f34e0f;
 }
 #info .inner .address form .label1, #info .inner .address form .label3, #info .inner .address form .label4, #info .inner .address form .label5, #info .inner .address form .label7 {
@@ -37,6 +37,15 @@
 #info .inner .address form .select {
   height: 28px;
   width: 116px;
+}
+#info .inner .address form .test, #info .inner .address form .test1, #info .inner .address form .test2 {
+  height: 25px;
+  line-height: 25px;
+  color: red;
+  font-size: 14px;
+}
+#info .inner .address form .test1 {
+  color: orange;
 }
 #info .inner .address form .input1 {
   width: 103px;
@@ -51,6 +60,7 @@
   color: #8e8e8e;
 }
 #info .inner .address .submit1 {
+  outline: none;
   border: none;
   font-weight: bold;
   height: 30px;
@@ -121,12 +131,12 @@
   font-size: 12px;
   font-weight: 400;
 }
-#info .inner .order-info ul {
+#info .inner .order-info .shop ul {
   width: 983px;
   height: 24px;
   border-bottom: 2px solid #333333;
 }
-#info .inner .order-info ul li {
+#info .inner .order-info .shop ul li {
   display: block;
   float: left;
   height: 24px;
@@ -134,11 +144,152 @@
   color: #4c4c4c;
   margin-right: 100px;
 }
-#info .inner .order-info ul .name {
+#info .inner .order-info .shop ul .name {
   margin-right: 350px;
 }
-#info .inner .order-info ul .price2 {
+#info .inner .order-info .shop ul .price2 {
   margin-right: 0px;
+}
+#info .inner .order-info .shop .goods {
+  width: 983px;
+  margin-bottom: 20px;
+}
+#info .inner .order-info .shop .goods .order {
+  width: 983px;
+  height: 150px;
+}
+#info .inner .order-info .shop .goods .order .first {
+  width: 983px;
+  height: 22px;
+  line-height: 22px;
+}
+#info .inner .order-info .shop .goods .order .first .a1 {
+  color: blue;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+#info .inner .order-info .shop .goods .order .first .a1:hover {
+  text-decoration: underline;
+}
+#info .inner .order-info .shop .goods .order .second {
+  width: 981px;
+  height: 140px;
+  border: solid 1px #ccc;
+  border-top: none;
+}
+#info .inner .order-info .shop .goods .order .second .benefit {
+  width: 981px;
+  height: 36px;
+  background-color: #edeaea;
+  overflow: hidden;
+}
+#info .inner .order-info .shop .goods .order .second .benefit .adv {
+  height: 24px;
+  width: 112px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: white;
+  color: red;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid lightpink;
+  border-radius: 2px;
+  display: block;
+}
+#info .inner .order-info .shop .goods .order .second .text {
+  width: 981px;
+  height: 102px;
+  position: relative;
+}
+#info .inner .order-info .shop .goods .order .second .text .ckb2, #info .inner .order-info .shop .goods .order .second .text .img1, #info .inner .order-info .shop .goods .order .second .text .explain, #info .inner .order-info .shop .goods .order .second .text .a4, #info .inner .order-info .shop .goods .order .second .text .amount {
+  display: block;
+  float: left;
+}
+#info .inner .order-info .shop .goods .order .second .text .ckb2 {
+  margin-left: 10px;
+  margin-top: 50px;
+}
+#info .inner .order-info .shop .goods .order .second .text .img1 {
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 80px;
+  margin-top: 11px;
+  margin-left: 10px;
+}
+#info .inner .order-info .shop .goods .order .second .text .explain {
+  height: 80px;
+  width: 310px;
+  margin-top: 11px;
+  margin-left: 20px;
+  position: relative;
+}
+#info .inner .order-info .shop .goods .order .second .text .explain .p1 {
+  width: 310px;
+  height: 12px;
+  line-height: 20px;
+}
+#info .inner .order-info .shop .goods .order .second .text .explain .a2, #info .inner .order-info .shop .goods .order .second .text .explain .a3 {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  height: 12px;
+}
+#info .inner .order-info .shop .goods .order .second .text .explain .a3 {
+  left: 82px;
+}
+#info .inner .order-info .shop .goods .order .second .text .a4 {
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  top: 40px;
+  left: 450px;
+  height: 12px;
+}
+#info .inner .order-info .shop .goods .order .second .text .value {
+  display: block;
+  line-height: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  left: 600px;
+}
+#info .inner .order-info .shop .goods .order .second .text .discount {
+  line-height: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  left: 730px;
+}
+#info .inner .order-info .shop .goods .order .second .text .text-price {
+  font-size: 14px;
+  height: 14px;
+  position: absolute;
+  top: 40px;
+  left: 870px;
+  color: red;
+  font-weight: bold;
+}
+#info .inner .order-info .shop .goods .order .second .text .store, #info .inner .order-info .shop .goods .order .second .text .del {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  left: 897px;
+  height: 14px;
+  line-height: 14px;
+}
+#info .inner .order-info .shop .goods .order .second .text .store {
+  top: 33px;
+}
+#info .inner .order-info .shop .goods .order .second .text .del {
+  top: 52px;
+}
+#info .inner .order-info .shop .goods .order .second .text .del:hover {
+  text-decoration: underline;
+  color: blue;
 }
 #info .inner .order-info .total {
   height: 90px;
@@ -195,6 +346,11 @@
   margin-right: 30px;
   line-height: 44px;
 }
+#info .inner .order-info .total .cell3 a .price3 {
+  line-height: 14px;
+  height: 14px;
+  font-size: 12px;
+}
 #info .inner .total2 {
   height: 175px;
   width: 981px;
@@ -242,11 +398,17 @@
 #info .inner .total2 .right .real, #info .inner .total2 .right .span2, #info .inner .total2 .right .span3 {
   color: #8e8e8e;
 }
+#info .inner .total2 .right .real .money {
+  font-weight: bold;
+  font-size: 24px;
+  color: orangered;
+}
 #info .inner .total2 .right .span2 {
   float: right;
   margin-right: 50px;
 }
 #info .inner .total2 .right button {
+  outline: none;
   height: 42px;
   width: 162px;
   margin-top: 28px;

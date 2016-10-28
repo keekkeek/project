@@ -138,11 +138,10 @@ window.onload = function(){
             var e = evt||event;
             var displayY = getTop(display);
             var displayX = getLeft(display);
-            var left1 = e.pageX;
-            var top1 = e.pageY;
-
-            square.style.top = (e.pageY - displayY -105) +"px";
-            square.style.left = (e.pageX - displayX - 105)+"px";
+            var left1 = e.pageX||(e.clientX + document.documentElement.scrollLeft);
+            var top1 = e.pageY||(e.clientY + document.documentElement.scrollTop);
+            square.style.top = (top1 - displayY -105) +"px";
+            square.style.left = (left1 - displayX - 105)+"px";
 
             if(parseInt(square.style.top)<=0){
                 square.style.top = "0px";
@@ -320,12 +319,16 @@ window.onload = function(){
                     "&goodsimg:" + goodsimg + "&goodscolor:" + goodscolor + "&goodssize:" + goodssize +
                     "&goodsamount:" + goodsamount + "&goodsprice:" + goodsprice.substring(1);
                 setCookie("goods" + order_id, value, 7);
-                window.location.href = "";
+                //window.location.href = "shopcar.html";
+                alert("已经添加到了购物车了");
             }else{
                 alert("请查看信息是否填写完整！不可遗漏");
             }
         });
 
+        $(".buy").click(function(){
+            window.location.href = "shopcar.html";
+        });
         //下面的Tab切换
         $("#introduce .txt1").eq(0).css({display:"block"});
         //点击上面的tab进行样式的变动
@@ -366,5 +369,11 @@ window.onload = function(){
             });
         }
 
+        //回到首页
+        $("#firstPage").click(
+            function(){
+                window.location.href ="../index.html";
+            }
+        );
 
 }

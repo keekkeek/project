@@ -44,13 +44,13 @@
                         <form>
                             <p></p><label class="label1"><span class="star">*</span>所 在 地 区 :</label>
                             <select class="select"><option>请选择...</option><option>北京</option><option>上海</option></select>
-                            <label class="label2">&nbsp;&nbsp;邮政编码:</label><input class="input1" type="text"><br/>
+                            <label class="label2">&nbsp;&nbsp;邮政编码:</label><input class="input1" type="text"><a class="test"></a><br/>
                             <label class="label3"><span class="star">*</span>街 道 地 址 :</label>
-                            <input class="input2" type="text"/><br/>
+                            <input class="input2" type="text"/><a class="test1"></a><br/>
                             <label class="label4"><span class="star">*</span> 收货人姓名 :</label>
                             <input  class="input3" type="text"/><br/>
                             <label class="label5"><span class="star">*</span>手 机 号 码 :</label>
-                            <input  class="input4" type="text"/><br/> <label class="label6">&nbsp;为能够顺利送达商品，请填写正确的手机号</label>
+                            <input  class="input4" type="text"/><br/> <label class="label6">&nbsp;<a class="test2"></a></label>
                             <label class="label7">&nbsp;默 认 设 置 :</label><input  class="input5" type="checkbox">
                             <label class="label8">&nbsp;设置后系统将在购买时自动选中该收货地址</label>
                         </form>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="pay-way">
                         <p class="work">选择支付方式</p>
-                        <input class="zxjf" name="zhifu" type="radio"/>在线支付 <span class="span1">支持支付宝、银联在线支付、财付通及绝大多数银行借记卡和部分银行信用卡</span><br/>
+                        <input class="zxjf" name="zhifu" type="radio" checked="checked"/>在线支付 <span class="span1">支持支付宝、银联在线支付、财付通及绝大多数银行借记卡和部分银行信用卡</span><br/>
                             <div class="bank">
                                 <p>提交订单后，您可以选择以下银行及支付方式进行支付:</p>
                                 <ul>
@@ -83,6 +83,9 @@
                                 <li class="discount">优惠(元)</li>
                                 <li class="price2">小计(元)</li>
                             </ul>
+                            <div class="goods">
+
+                            </div>
                         </div>
                         <div class="total">
                             <div class="cell1"><a>本店购满10元包邮!</a></div>
@@ -150,3 +153,6 @@
         </div>
     </body>
 </html>
+<script src="../javascript/jquery-1.8.3.js"></script>
+<script src="../javascript/base.js"></script>
+<script src="../javascript/balance.js"></script>
