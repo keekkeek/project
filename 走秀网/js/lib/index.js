@@ -1,7 +1,6 @@
 var myScroll;
 var myWisper;
 var id = 1;
-var userID;
 //滚动图等信息
 
 $(function(){
@@ -26,31 +25,8 @@ $(function(){
 	});
 });
 
-//购物车操作
-
-
-function getUser(){
-	var info = localStorage.getItem("user");
-	var value = JSON.parse(info);
-	return value["userID"];
-}
-
-function getShopCar(userID){
-	$.ajax({
-		type:"get",
-		dataType:"jsonp",
-		url:"http://datainfo.duapp.com/shopdata/getCar.php",
-		data:{userID:userID},
-		success:function(data){
-			if(data == 0){
-				alert("购物车为空");
-			}else{
-				alert(data);
-			}
-		}
-	});
-}
-
+//验证登录
+login('','');
 function load(){
 	myScroll = new IScroll("#wrapper",{
 		mouseWheel : true,
@@ -98,11 +74,48 @@ function getData(id){
 						left.append(img);
 					});
 					
-					//购物车的button按钮进行设置
+					img.on("touchstart",function(){
+						goodsID = data[index].goodsID;
+						window.location = "html/introduce.html?goodsID="+encodeURI(data[index].goodsID);
+					});
+					
+					//针对页面的每购物车按钮进行控制,跳转的函数
 					_button.on("touchstart",function(){
+						if(isLogin){
+							$.ajax({
+								type:"get",
+								dataType:"jsonp",
+								url:"http://datainfo.duapp.com/shopdata/getCar.php",
+								data:{userID:userID},
+								success:function(data){
+									if(data == 0){
+										window.location = page_arr2[2].page;
+									}else{
+										window.location = page_arr2[2].page;
+									}
+								}
+							});
+						}else{
+							message("未登录账号",(function(){
+								var left = $("<button class='message_left'>去登录</button>");
+								var right = $("<button class='message_right'>取消</button>");
+								$(".message").append(left);
+								$(".message").append(right);
+								left.on("touchstart",function(){
+									window.location = "html/login.html";
+								});
+								right.on("touchstart",function(){
+									$(".message").remove();
+								});
+							}));	
+						}
+					});
+					
+					//购物车的button按钮进行设置
+					/*_button.on("touchstart",function(){
 						var user = getUser();
 						getShopCar(user);
-					});
+					});*/
 					
 					right.append(p1);
 					right.append(p2);
@@ -110,7 +123,6 @@ function getData(id){
 					span.append(del);
 					right.append(p3);
 					right.append(_button);
-					
 					$scrollBox.append(goods);
 				});
 			}

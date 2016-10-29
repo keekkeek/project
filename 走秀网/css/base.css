@@ -8,6 +8,7 @@ border-bottom: solid 0.0625rem #52525A;}
 header{position: fixed; left: 0rem; top: 1.3125rem; right: 0rem;
 line-height: 2.6875rem; font-size: 1.125rem; font-weight: 600;
 height: 2.6875rem; background-color: #e4366b; color: white; text-align: center;}
+header .back,.return{height: 100%;width: 11.09%;}
 .search{ position: fixed; left: 0rem; top: 4rem; right: 0rem;
 height: 2.6875rem; background-color:#52525a; border-top: solid 0.0625rem #000000;
 border-bottom: solid 0.0625rem #000000;}
@@ -35,3 +36,16 @@ text-align: center; font-size: 1.25rem; height: 3rem; width: 100%;
 background-image: -webkit-linear-gradient(90deg,#65646a 0%,#4a4a52 100%);}
 footer .box2:nth-of-type(3){ border-right: none;}
 footer .red2{padding-top: 0rem;border-top: 0.175rem solid #e4366b;}
+
+.message{ width: 7rem; height: auto; min-height: 1rem; background-color: #FFFFFF;
+padding-top:1rem;z-index: 1000; color: #000000;
+position: absolute; left: 50%; margin-left: -3.5rem; text-align: center; top: 0rem;
+border-radius: 0.5rem;  display: -webkit-box;
+}
+.message_txt{ width: 7rem;min-height: 1rem; height: auto;font-weight: bold; display: block;
+line-height: 1rem; font-size: 0.8rem; position: absolute; top: 1rem; left: 0rem;text-align: center;}
+.message .message_left,.message_right{display: block; -webkit-box-flex: 1;height: 2rem; margin-bottom: 0rem;
+width: 3.5rem; outline: none; color: #007AFF;border: none; border-top: 0.05rem solid #ACACAC; margin-top: 1.5rem;
+background-color: #FFFFFF;  line-height: 2rem; font-size: 0.75rem;}
+.message .message_left{ border-right: 0.05rem solid #ACACAC; border-bottom-left-radius: 0.5rem;}
+.message .message_right{ border-bottom-right-radius: 0.5rem;}

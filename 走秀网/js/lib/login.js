@@ -49,7 +49,7 @@ function toLogin(user){
 				}
 				var str = JSON.stringify(obj);
 				localStorage.setItem("user",str);
-				sessionStorage.setItem("user",str);
+				//sessionStorage.setItem("user",str);
 			}
 		}else{
 			alert("登录失败");
