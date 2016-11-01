@@ -1,0 +1,308 @@
+{
+	"homepage.html": {
+		"resources": [
+			"img/00_01.jpg",
+			"css/base.css",
+			"img/00_06.jpg",
+			"img/00_04.jpg",
+			"img/00_09.jpg",
+			"img/00_05.jpg",
+			"img/00_07.jpg",
+			"css/public.css",
+			"img/00_11.jpg",
+			"css/animate.min.css",
+			"js/lib/swiper.min.js",
+			"img/00_02.jpg",
+			"img/00_08.jpg",
+			"js/lib/swiper.animate.min.js",
+			"css/swiper.min.css",
+			"js/lib/homepage.js",
+			"js/lib/zepto.min.js",
+			"img/00_10.jpg",
+			"img/00_03.jpg",
+			"index.html",
+			"css/lib/homepage.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"css/lib/index.css",
+			"img/base6.png",
+			"js/lib/index.js",
+			"img/base2.png",
+			"img/base5.png",
+			"img/base7.png",
+			"js/lib/iscroll-min.js",
+			"img/01_02.jpg",
+			"img/01_04.jpg",
+			"img/base4.png",
+			"js/lib/common.js",
+			"img/base3.png",
+			"img/01_03.jpg",
+			"img/01_01.jpg",
+			"img/base8.png",
+			"html/myshow.html",
+			"html/more.html",
+			"css/base.css",
+			"css/public.css",
+			"js/lib/swiper.min.js",
+			"css/swiper.min.css",
+			"js/lib/zepto.min.js",
+			"html/shopcar.html",
+			"html/classify.html",
+			"html/introduce.html",
+			"html/login.html"
+		],
+		"refer": [
+			"html/myshow.html",
+			"html/more.html",
+			"html/shopcar.html",
+			"html/classify.html",
+			"html/introduce.html",
+			"html/login.html"
+		]
+	},
+	"html/myshow.html": {
+		"resources": [
+			"index.html",
+			"img/base11.png",
+			"img/base14.png",
+			"js/lib/myshow.js",
+			"css/lib/myshow.css",
+			"html/myorder.html",
+			"html/login.html",
+			"css/base.css",
+			"img/base6.png",
+			"img/base5.png",
+			"img/base7.png",
+			"img/base4.png",
+			"js/lib/zepto.min.js",
+			"html/register.html",
+			"js/lib/common.js",
+			"img/base8.png",
+			"html/more.html",
+			"html/mycoupon.html",
+			"html/record.html",
+			"html/shopcar.html"
+		],
+		"refer": [
+			"index.html",
+			"html/myorder.html",
+			"html/login.html",
+			"html/register.html",
+			"html/more.html",
+			"html/mycoupon.html",
+			"html/record.html",
+			"html/shopcar.html"
+		]
+	},
+	"html/more.html": {
+		"resources": [
+			"index.html",
+			"js/lib/more.js",
+			"css/lib/more.css",
+			"img/base11.png",
+			"img/base5.png",
+			"css/base.css",
+			"img/base7.png",
+			"js/lib/zepto.min.js",
+			"img/base4.png",
+			"js/lib/common.js",
+			"img/base6.png",
+			"img/base8.png",
+			"html/myshow.html"
+		],
+		"refer": [
+			"index.html",
+			"html/myshow.html"
+		]
+	},
+	"html/shopcar.html": {
+		"resources": [
+			"index.html",
+			"img/base11.png",
+			"css/lib/shopcar.css",
+			"js/lib/shopcar.js",
+			"html/myshow.html",
+			"img/base5.png",
+			"css/base.css",
+			"img/base7.png",
+			"js/lib/zepto.min.js",
+			"img/base4.png",
+			"js/lib/common.js",
+			"img/base6.png",
+			"img/base8.png",
+			"img/base12.png",
+			"img/base13.png",
+			"html/classify.html"
+		],
+		"refer": [
+			"index.html",
+			"html/myshow.html",
+			"html/classify.html"
+		]
+	},
+	"html/classify.html": {
+		"resources": [
+			"img/base9.png",
+			"img/base10.png",
+			"css/lib/classify.css",
+			"index.html",
+			"css/base.css",
+			"img/base11.png",
+			"img/base6.png",
+			"img/base2.png",
+			"img/base5.png",
+			"img/base7.png",
+			"img/base4.png",
+			"js/lib/zepto.min.js",
+			"js/lib/common.js",
+			"img/base8.png",
+			"js/lib/classify.js",
+			"js/lib/iscroll-min.js",
+			"html/introduce.html",
+			"html/login.html",
+			"html/shopcar.html"
+		],
+		"refer": [
+			"index.html",
+			"html/introduce.html",
+			"html/login.html",
+			"html/shopcar.html"
+		]
+	},
+	"html/introduce.html": {
+		"resources": [
+			"css/lib/introduce.css",
+			"js/lib/intro.js",
+			"img/base11.png",
+			"css/base.css",
+			"js/lib/zepto.min.js",
+			"js/lib/common.js",
+			"html/detail.html",
+			"html/photo.html",
+			"index.html"
+		],
+		"refer": [
+			"html/detail.html",
+			"html/photo.html",
+			"index.html"
+		]
+	},
+	"html/detail.html": {
+		"resources": [
+			"css/lib/detail.css",
+			"js/lib/detail.js",
+			"img/base11.png",
+			"css/base.css",
+			"js/lib/zepto.min.js",
+			"js/lib/common.js",
+			"html/photo.html",
+			"html/introduce.html"
+		],
+		"refer": [
+			"html/photo.html",
+			"html/introduce.html"
+		]
+	},
+	"html/photo.html": {
+		"resources": [
+			"css/lib/phone.css",
+			"js/lib/photo.js",
+			"js/lib/swiper-3.3.1.min.js",
+			"img/base11.png",
+			"css/base.css",
+			"css/swiper.min.css",
+			"js/lib/zepto.min.js",
+			"js/lib/common.js",
+			"index.html",
+			"html/detail.html"
+		],
+		"refer": [
+			"index.html",
+			"html/detail.html"
+		]
+	},
+	"html/myorder.html": {
+		"resources": [
+			"html/myshow.html",
+			"css/lib/myorder.css",
+			"img/09_01.png",
+			"img/14_02.png",
+			"html/classify.html"
+		],
+		"refer": [
+			"html/myshow.html",
+			"html/classify.html"
+		]
+	},
+	"html/login.html": {
+		"resources": [
+			"css/lib/login.css",
+			"js/lib/login.js",
+			"html/register.html",
+			"img/base5.png",
+			"img/base11.png",
+			"css/base.css",
+			"img/base7.png",
+			"js/lib/zepto.min.js",
+			"img/base4.png",
+			"js/lib/common.js",
+			"img/base6.png",
+			"img/base8.png",
+			"html/myshow.html",
+			"html/classify.html",
+			"index.html"
+		],
+		"refer": [
+			"html/register.html",
+			"html/myshow.html",
+			"html/classify.html",
+			"index.html"
+		]
+	},
+	"html/register.html": {
+		"resources": [
+			"js/lib/register.js",
+			"css/lib/register.css",
+			"img/base5.png",
+			"img/base11.png",
+			"css/base.css",
+			"img/base7.png",
+			"js/lib/zepto.min.js",
+			"img/base4.png",
+			"js/lib/common.js",
+			"img/base6.png",
+			"img/base8.png",
+			"html/login.html",
+			"html/myshow.html"
+		],
+		"refer": [
+			"html/login.html",
+			"html/myshow.html"
+		]
+	},
+	"html/mycoupon.html": {
+		"resources": [
+			"html/myshow.html",
+			"css/lib/mycoupon.css"
+		],
+		"refer": [
+			"html/myshow.html"
+		]
+	},
+	"html/record.html": {
+		"resources": [
+			"html/myshow.html",
+			"img/16_02.png",
+			"css/lib/record.css",
+			"img/16_01.png"
+		],
+		"refer": [
+			"html/myshow.html"
+		]
+	}
+}

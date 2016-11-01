@@ -1,0 +1,22 @@
+header img{height: 100%; width: 2.22rem; position: absolute; left: 0rem; top: 0rem;}			
+.main{position: fixed; background-color: #f7f7f7; top:4rem; left: 0rem; bottom: 3.0625rem;
+border-top: solid 0.0625rem #000000; overflow: scroll;}
+.order{ width: 100%; height: 7.1875rem; border-bottom: solid 0.0625rem #aaaaaa; background-color: #ffffff;}
+.order .left,.right{ float: left; height: 5.375rem; margin-top: 0.8125rem; margin-left: 5%;}	
+.order .left{border: solid 0.0625rem #cccccc;  width: 26.875%;}
+.order .left img{ width: 100%; height: 100%;}
+.order .right{ width: 60%; position: relative;}
+.right .p3,.p4,.amount,.dustbin,.cancel{ position: absolute;}
+.right .p3{ top: 0rem; left: 0rem; height: 2.5rem;  width: 73.67%;}
+.right .p4{ left: 0rem; top: 2.5rem; height: 1.25rem; width: 100%;}
+.right .p4 .price{color: #E4366B;}
+.right .size{ float:right;}
+.right,.amount{line-height: 1.25rem; font-size: 0.9375rem;}
+.amount{ position: absolute; left: 0rem; top: 3.75rem; height: 1.32rem;}
+.amount .p5{ float: left; outline: none; line-height: 1.32rem; 
+font-size: 0.9375rem;}
+.number{ float: left; margin-left: 0.25rem;}
+.p3{margin-left: 0rem;}
+.cancel{ width: 4.25rem; height: 1.75rem; border: none; bottom: 0rem; right: 0rem;
+background-image: -webkit-linear-gradient(90deg,#f75f88 0%,#d81250 100%);
+color: #FFFFFF; border-radius: 0.4rem;}

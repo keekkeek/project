@@ -1,0 +1,21 @@
+header img{height: 100%; width: 2.22rem; position: absolute; left: 0rem; top: 0rem;}			
+header .register{ position: absolute; width: 3.375rem; height: 1.625rem;
+ top:0.4375rem; right: 0.625rem; border: none; border-radius: 0.25rem;
+ font-size: 0.8rem; color: #FFFFFF; outline: none;
+ background-image: -webkit-linear-gradient(90deg,#f76089 0%,#d81250 100%);}
+.main{position: fixed; background-color: #f7f7f7; top:4rem; 
+bottom: 3.0625rem;border-top: solid 0.0625rem #000000;}
+.main .account,.password,.signup{ float: none; margin-left: 7.5%; outline: none; display: block;
+height: 2.375rem; border:none; width: 85%; border-radius: 0.4rem;
+font-size: 1rem; line-height: 2.375rem; }
+.main .account,.password{width: 16.5625rem; padding-left: 3%; width: 82%; 
+ color: #a39a95; margin-top: 1.8125rem; font-weight: 600;} 
+.main .remember{ height: 1rem; width: 17.3125rem; margin-left: 7.5%; 
+margin-top: 1.25rem; margin-bottom: 1.25rem;}
+.ckb1{border: solid 0.0625rem #000000; line-height: 1rem;
+ width: 1rem; height: 1rem;}
+.remember span,a{display: block; float: left;line-height: 1rem;}
+.remember span{ margin-left: 0.5rem;}
+.remember a{ text-decoration: underline; margin-left: 1.5rem; color: #a39a95;}
+.main .signup{ color: #FFFFFF;
+background-image: -webkit-linear-gradient(90deg,#f75f88 0%,#d81250 100%);}
