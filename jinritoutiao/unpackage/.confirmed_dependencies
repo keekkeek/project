@@ -1,0 +1,26 @@
+{
+	"index.html": {
+		"resources": [
+			"js/iscroll-min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"css/lib/index.css",
+			"css/public.css",
+			"json/top.json",
+			"js/lib/index.js",
+			"json/title.json",
+			"css/iconfont/iconfont.woff",
+			"json/guoji.json",
+			"json/tiyu.json",
+			"json/shehui.json",
+			"json/yule.json",
+			"json/guonei.json",
+			"json/xiaohua.json",
+			"json/caijing.json",
+			"json/jiankang.json",
+			"json/renwen.json",
+			"json/junshi.json",
+			"json/keji.json"
+		]
+	}
+}
