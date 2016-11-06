@@ -1,4 +1,3 @@
-
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1478096809'); /* IE9*/
   src: url('iconfont.eot?t=1478096809#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -21,3 +20,25 @@
 .icon-sousuo:before { content: "\e604"; }
 .icon-wode:before { content: "\e64f"; }
 .icon-faxian:before { content: "\e61f"; }
+
+
+
+.icon-shoucang:before { content: "\e604"; }
+.icon-qianbao:before { content: "\e631"; }
+.icon-shangcheng:before { content: "\e604"; }
+.icon-xiaoxi:before { content: "\e6e1"; }
+.icon-yaoqingma:before { content: "\e62f"; }
+.icon-lishi:before { content: "\e65c"; }
+.icon-task:before { content: "\e673"; }
+.icon-lixianxiazai:before { content: "\e609"; }
+.icon-yejianmoshi:before { content: "\e657"; }
+.icon-shezhi:before { content: "\3466"; }
+.icon-fankui:before { content: "\e663"; }
+.icon-dengluyonghu:before { content: "\e603"; }
+.icon-xiangyou:before { content: "\e651"; }
+.icon-icon-yxj-font:before { content: "\e629"; }
+.icon-xiangzuo:before { content: "\e885"; }
+.icon-jiahao:before { content: "\e608"; }
+.icon-pinglun:before { content: "\f0093"; }
+.icon-shoucang1:before { content: "\f0114"; }
+.icon-share:before { content: "\e63c"; }

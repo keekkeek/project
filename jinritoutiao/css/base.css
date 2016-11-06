@@ -1,0 +1,6 @@
+.mui-bar-tab,.miu-bar{ background-color: #f8f8f8; position: fixed; bottom: 0rem; left: 0rem;}
+.mui-bar-tab .mui-tab-item .mui-icon{top: 3px;}
+.mui-bar-tab .mui-tab-item.mui-active{ color: #FFFFFF;}
+.mui-bar-tab .mui-active .mui-icon{ background-color: #F44B50;}
+.mui-bar-tab .mui-active .mui-tab-label{ color: #F44B50;}
+.mui-bar-tab .mui-tab-item .mui-tab-label{margin-top: 3px;}

@@ -1,10 +1,28 @@
-var page = [".info_prev",".info",".info_next"];
+//var page = [".info_prev",".info",".info_next"];
 
 //页面刚加载时，就需要启动运行的方法
 $(function(){
 	navSender();
-	getNews("top");
+	getNews();
 });
+
+//滚动条验证
+function load(){
+	var myScroll = new IScroll(".wrapper",{
+		mouseWheel : true,
+		scrollbars : true
+	});
+}
+
+//滑动页面的创建
+function loadSwiper(){
+	var myWisper = new Swiper("#banner",{
+		//autoplay:1000,
+		pagination:".swiper-pagination",
+		autoplayDisableOnInteraction:false,
+		paginationClickable:true
+	});
+}
 
 //对页面分类栏的设置与渲染
 function navSender(){
@@ -56,41 +74,17 @@ function navSender(){
 }
 
 //获取当前，左边，右边 的类别的新闻信息
-function getNews(name){
+function getNews(){
 		var data = localStorage.getItem("news_category");
 		var info = data.split("&");
-		var name_current = name;
-		var name_prev = "";
-		var name_next = "";
-		$.each(info, function(index) {
+		$.each(info, function(index){
 			var obj = JSON.parse(info[index]);
-			var len = info.length;
-			if(obj.name == name&&len>1){
-				if(index == 0){
-					var obj = JSON.parse(info[index+1]);
-					name_next = obj.name;
-				}else if(index == len-1){
-					var obj = JSON.parse(info[index-1]);
-					name_prev = obj.name;
-				}else{
-					var obj = JSON.parse(info[index-1]);
-					name_prev = obj.name;
-					var obj = JSON.parse(info[index+1]);
-					name_next = obj.name;
-				}
-			}
+			getSingleNew(obj.name);
 		});
-		getSingleNew(name,1);
-		if(name_prev!=""){
-			getSingleNew(name_prev,0);
-		}
-		if(name_next!=""){
-			getSingleNew(name_next,2);
-		}
 }
 
 //根据标题栏上面的分类来加载对于类型的新闻信息(获取单个页面的加载信息)
-function getSingleNew(name,isFlag){
+function getSingleNew(name){
 	var url_value = "json/"+name+".json";
 	$.ajax({
 		type:"get",
@@ -98,34 +92,36 @@ function getSingleNew(name,isFlag){
 		url:url_value,
 		async:true,
 		success:function(data){
-			setPage(data,isFlag);
+			setPage(data);
 		}
 	});
 }
 
 //根据获取的数据来设置相关的新闻
-function setPage(data,isFlag){
+function setPage(data){
 	//var info = JSON.parse(data);
 	//console.log(info);
 	var info = data;
 	var result = info.result;
 	var data = result.data;
 	var len = data.length;
+	var swiper_slide = $("<div class='swiper-slide '></div>");
+	$("#slides").append(swiper_slide);
+	loadSwiper();
 	for(var i=0;i<len;i++){
 		var news = data[i];
-		setNews(news,isFlag);
+		setNews(news);
 	}
-	
 }
 
-function setNews(news,isFlag){
-	console.log(isFlag);
+function setNews(news){
 	var title_val = news["title"];
 	var imgUrl = news["thumbnail_pic_s"];
 	var author_name = news["author_name"];
 	var _url = news["url"];
 	var box = $("<div class='box'></div>");
-	$(page[isFlag]).append(box);//每一个新闻类都有一个info
+	var len = $(".info").length;
+	$(".swiper-slide").eq(len-1).append(box);//每一个新闻类都有一个info
 	var img = $("<img class='new_img' src='"+imgUrl+"' />");
 	var title = $("<p class='title'></p>");
 	var brief = $("<div class='new_beirf'></div>");
@@ -141,3 +137,4 @@ function setNews(news,isFlag){
 	box.append(img);
 	box.append(brief);
 }
+
