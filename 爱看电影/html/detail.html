@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title></title>
+		<link rel="stylesheet" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/lib/detail.css"/>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript">
+			var m1 = angular.module("app1",[]);
+			m1.controller("demo",function($scope,$http){
+				$http.get("../json/detail.json").success(
+                    function(data){
+                        $scope.dataList = data;
+                        $scope.detail = $scope.dataList["detail"][0];
+                        $scope.video = $scope.detail["video"];
+                        $scope.poster = $scope.detail["poster"];
+                        $scope.img = $scope.detail["img"];
+                        $scope.p1 = $scope.detail["duration"];
+                        $scope.p2 = $scope.detail["type"];
+                        $scope.p3 = $scope.detail["date"];
+                        $scope.point = $scope.detail["point"];
+                        $scope.num = $scope.detail["num"];
+                        $scope.workers = $scope.detail["actor"];
+                        $scope.brief = $scope.detail["brief"];
+                        $scope.dianzan = $scope.detail["dianzan"];
+                        $scope.music = $scope.detail["music"]["intro"];
+                    }
+                )
+				$http.get("../json/waterfall.json").success(
+					function(data){
+						$scope.imgList = data["result"];
+					}
+				)
+				$http.get("../json/boxOffice.json").success(
+					function(data){
+						$scope.office = data["result"][0];
+						$scope.todayOffice = $scope.office.todayOffice;
+						$scope.allOffice = $scope.office.allOffice;
+						console.log($scope.office);
+					}
+				)
+				
+			})
+			
+		</script>
+	</head>
+	<body ng-app="app1" ng-controller="demo">
+		<div class="container">
+			<div class="header"><span class="back iconfont">&#xe648;</span><span class="iconfont"></span></div>
+			<video id="video" controls="controls" src="{{video}}" poster="{{poster}}">
+			</video>
+			<div class="main">
+				<div class="waterfall">
+					<img class="img1" ng-repeat="imgNo in imgList" src="../img/{{imgNo}}.jpg"/>
+				</div>
+				<div class="content">
+					<div class="box1">
+						<img class="filmimg" src="{{img}}" />
+						<p class="p1">{{p1}}</p>
+						<p class="p2">{{p2}}</p>
+						<p class="p3">{{p3}}上映</p>
+					</div>
+					<div class="box2">
+						<div class="comment">
+							<span class="left iconfont"></span>
+							<div class="right">
+								<p class="p4">{{point}}</p>
+								<p class="p5">{{num}}人评过</p>
+							</div>
+						</div>
+						<div class="signup">
+							<span class="left iconfont"></span>
+							<div class="right">
+								<p class="p4">登录</p>
+								<p class="p5">看好友评论</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="box3">
+						<div class="people">
+							<div class="worker" ng-repeat="worker in workers">
+								<img class="icon" src="{{worker.picture}}" />
+								<p class="name">{{worker.name}}</p>
+								<p class="character">{{worker.character}}</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="box4">
+						<div class="intro">
+							<span class="iconfont"></span>
+							<p class="p6">剧情简介</p>
+							<span class="next iconfont">&#xe649;</span>
+							<p class="p7">{{brief}}</p>
+						</div>
+						<div class="music">
+							<span class="iconfont"></span>
+							<p class="p6">电影原声</p>
+							<span class="next iconfont">&#xe649;</span>
+							<p class="p7">{{music}}</p>
+						</div>
+					</div>
+					
+					<div class="box5">
+						<div class="todayOffice">
+							<p class="p8">{{todayOffice}}</p>
+							<p class="p9">今日票房  (万)</p>
+						</div>
+						<div class="allOffice">
+							<p class="p8">{{allOffice}}</p>
+							<p class="p9">累计票房  (万)</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				<div class="footer_left">
+					<div class="iconfont"><a>写评论</a></div>
+					<div class="iconfont">&#xe61d;<a>{{dianzan}}</a></div>
+				</div>
+				<div class="footer_right">选座购票</div>
+		</div>
+	</body>
+</html>

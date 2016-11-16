@@ -1,0 +1,56 @@
+{
+	"detail":[
+		{	
+			"filmId":"1",
+			"video":"../video/video.mp4",
+			"img":"http://img5.gewara.com/cw270h360/images/movie/201610/s_6d516ca_157c2e8dd01__7a0c.jpg",
+			"poster":"../img/poster.png",
+			"name":"比利.林恩的中场战事",
+			"name_en":"Billy Lynn's Long Halftime Walk",
+			"duration":"1小时50分钟",
+			"type":"剧情|战争|历史",
+			"date":"2016-11-11",
+			"point":"8.3",
+			"num":"7829",
+			"dianzan":"75k",
+			"actor":[
+				{
+					"name":"李安",
+					"character":"导演",
+					"picture":"../img/lian.png"
+				},
+				{
+					"name":"乔·阿尔文",
+					"character":"比利·林恩",
+					"picture":"http://img5.gewara.com/cw40h40/images/star/201609/s3b80b335_15741403c58__7fac.jpg"	
+				},
+				{
+					"name":"克里斯汀·斯图尔特",
+					"character":"凯瑟琳·林恩",
+					"picture":"http://img6.gewara.com/cw40h40/images/star/201603/s14fd1118_15398d99d73__7f22.jpg"	
+				},
+				{
+					"name":"加内特·赫德兰",
+					"character":"蒂姆",
+					"picture":"http://img5.gewara.com/cw40h40/images/star/201412/s385aa541_14a85aec440__7c81.jpg"				
+				},
+				{
+					"name":"范·迪塞尔",
+					"character":"施洛姆",
+					"picture":"http://img6.gewara.com/cw40h40/images/star/201409/sf8d7b1_1488d7a278d__78b0.jpg"						
+				},
+				{
+					"name":"史蒂夫·马丁",
+					"character":"奥格尔斯比",
+					"picture":"http://img5.gewara.com/cw40h40/images/star/201503/s687173d8_14c553d383d__7e84.jpg"					
+				}
+			],
+			"brief":"《比利.林恩的中场故事》根据畅销作家本·方丹的小说《Billy Lynn's Long Halftime Walk》改编。讲述了一个19岁的年轻士兵比利·林恩，因伊拉克战场上与敌军的一场激战，机缘巧合地成为了美国英雄。他和战友们受邀至全美橄榄球比赛的中场休息授勋，却引发了这位年轻士兵对人性的终极思考。",
+			"music":{
+				"intro":"原生音乐全收录，试听两边吧",
+				"music_title":"Heroes",
+				"address":""
+			}
+		}
+	]
+}

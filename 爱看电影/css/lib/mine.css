@@ -1,0 +1,52 @@
+@font-face {font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:1rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {font-family: 'iconfont2';
+    src: url('../iconfont2/iconfont.eot'); /* IE9*/
+    src: url('../iconfont2/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont2/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont2/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont2/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont2{
+    font-family:"iconfont2" !important;
+    font-size:1rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{ width: 100%; height: 100%; background-color: #F8F8F8;}
+.top{ width: 100%; height: 11.5rem; background-color: #666666; position: relative;}
+.login_icon,.setting_icon{position: absolute; top: 1rem; color: #FFFFFF; font-size:2rem;}
+.login_icon{ left: 0.5rem;}
+.setting_icon{ right: 0.5rem;}
+.icon{ position: absolute; top: 2.5rem; left: 50%; margin-left: -3rem;
+ width: 6rem; height: 6rem; border-radius: 100%; background-color: #FFFFFF;}
+.p1{position: absolute; left: 0; top: 9.5rem;  width: 100%; color: #FFFFFF;
+text-align: center;}
+.box1,.box2,.box3{ width: 100%; background-color: #FFFFFF;}
+.box1{ height: 5.8rem; display: -webkit-box;}
+.box1 div{-webkit-box-flex: 1; text-align: center;}
+.box1 span{ width: 100%; height: 4rem; display: block; line-height: 4rem; text-align: center;
+font-size: 2.5rem; color: orangered;}
+.box2{ margin-top: 1rem;}
+.order,.wallet,.account,.login_way,.advice,.kefu{height: 3.2rem; line-height: 3.2rem;}
+.order,.wallet,.account,.advice{ border-bottom:solid 1px #CCCCCC;}
+.box3{ margin-top: 1rem;}
+.box1 p,.box2 p,.box3 p{color: #000000; font-size: 1.2rem;}
+.box2 p,.box3 p{float: left;}
+.box2 span,.box3 span{ color: #CCCCCC; float: left; width: 2rem; text-align: center; font-size: 1.2rem;}
+.box2 .right,.box3 .right{ float: right; margin-right: 0.5rem;}

@@ -1,0 +1,71 @@
+@font-face {font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:1rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {font-family: 'iconfont2';
+    src: url('../iconfont2/iconfont.eot'); /* IE9*/
+    src: url('../iconfont2/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont2/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont2/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont2/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont2{
+    font-family:"iconfont2" !important;
+    font-size:1rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.container{ width: 100%; position: relative; padding-bottom: 3rem;}
+.slide_img{ width: 100%; height: 10rem;}
+.swiper-pagination-bullet{ width: 1rem; height: 0.3rem; border-radius: 0;}
+.swiper-pagination-bullet-active{ background-color: red;}
+
+.activity{ background-color: #FFFFFF; display: -webkit-box; width: 100%; height: 5rem;}
+.activity_box{ -webkit-box-flex: 1; height: 100%;}
+.box_span{display: block; margin: 0.5rem auto; width: 2.5rem; font-size: 2rem;border-radius: 2.5rem;
+height: 2.5rem; text-align: center; line-height: 2.5rem; color: #FFFFFF;}
+.activity_box:nth-of-type(1) .box_span{ background-color: #EE6A50; line-height: 2.3rem;}
+.activity_box:nth-of-type(2) .box_span{ background-color: #7FFFD4}
+.activity_box:nth-of-type(3) .box_span{ background-color: #B4EEB4;}
+.box_p{ text-align: center;}
+
+.hot_film,.future_film{ width: 100%; height: 15rem; margin-top: 0.5rem; background-color: #FFFFFF;}
+.title{ height: 3.6rem; line-height: 3.6rem; font-size: 1.2rem;
+margin-left: 1rem; font-weight: bold; color: #000000;}
+.more{ float: right; margin-right: 1rem; font-size: 1rem; color:#666666;}
+.film_detail{ height: 11.4rem; width: auto; padding-left: 1rem;}
+.film_content{ height: 100%; width: 100%; overflow-x: auto; white-space: nowrap;}
+.film{display: inline-block; height: 11.4rem; width: 25%; margin-right: 5%;}
+.film_poster{ display: block; width: 100%; height: 7.4rem;}
+.film_name{ width: 100%; height: 2rem; line-height: 2rem; text-align: center;
+ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;font-size: 0.8rem;}
+.film_point{ height: 1rem; line-height: 1rem; width: 100%;
+font-size: 0.8rem; color: #FFA54F;}
+.film_point .txt{float: right;}
+.ablong_father{display: block; height: 0.8rem; border:solid 0.1rem #FFA54F;
+ width: 4rem;}
+.ablong{ display: block; height: 0.8rem; float: left; background-color: #FFA54F;}
+
+.footer{ position: fixed; background-color: #f8f8f8; border-top: solid 0.1rem #cccccc;
+ left: 0; bottom: 0rem; height: 3rem; width: 100%;}
+.footer span{margin-left: 0.5rem; height: 3rem; line-height: 3rem; float:left;
+font-size: 1.8rem; position: relative;}
+.footer span a{ font-size: 1.1rem; display: none; height: 3rem; line-height: 3rem;
+font-weight: bold;}
+.footer span:nth-of-type(5){ float: right; margin-right: 0.5rem;}
+.orange{color: orange;}
+.footer span .appear{ display: inline-block;}
