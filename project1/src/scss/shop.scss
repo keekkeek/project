@@ -1,0 +1,76 @@
+@import "variable";
+@import "mixin";
+@import "variable";
+@import "mixin";
+
+*{margin:0; padding:0;}
+body{font-size:12px; margin: 0 auto;}
+ul li {list-style:none;}
+a{ text-decoration:none;}
+img{ border:none;}
+
+#header,#bottom{width: 100%;
+  .inner{ width: 983px; margin: 0 auto;}
+}
+
+#header{ height: 90px;
+  background: url("../image/shopcar/blackline1.jpg") repeat-x left bottom;
+  .inner{ height: 90px;
+    .logo{@include dis-flo(left);
+      @include baseSet(70,205,'',10,'','','','','','');
+      background: url("../image/shopcar/shopcar.png") no-repeat -115px -117px;
+    }
+    .base-info{@include dis-flo(right); width: 402px; height: 85px;
+      p{ float: right; margin-top: 16px;
+        .manage,.exit{ color: blue;}
+      }
+      .flow{float: right;
+        @include baseSet(42,402,'',10,'','','','','',''); position: relative;
+        ul { width: 402px; height: 42px;
+          li{ width: 134px; height: 42px; position: relative; text-align: center;
+            @include dis-flo(left);
+            hr{margin-top: 10px; height:2px; border: none; background-color: $grey;}
+            a{ position:absolute; top: 0px; left: 57px; text-align: center;
+              @include baseSet(20,20,'','','','',$grey,white,'',20); border-radius: 50%;
+            }
+            span{ color: $detail-grey;}
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+#bottom{height: 132px; margin-top: 73px; border-top: 2px solid #ccc;
+  .inner{ height: 132px;
+    ul{ @include baseSet(70,872,62,20,'','','','','','');
+      li{
+        @include dis-flo(left); width: 325px;
+        a{ display: block; margin-bottom: 5px;}
+        .a1{ font-size: 18px; color: black; font-weight: bold;}
+        .a2{ color: $detail-grey;}
+        .a3{ color: blue;}
+      }
+      .li3{ width: 200px;}
+    }
+  }
+}
+
+#advertise{ height: 64px;
+  div{ height: 64px;
+    #ad-div1{@include baseSet(64,856,0,'','','',#fcfcfc,'','',''); position: relative;
+      border-top: 1px solid #ccc; border-right: 1px solid #ccc;
+      img{margin-left: 5px;}
+      img,li,a{@include dis-flo(left);}
+      ul{
+        li{
+          @include baseSet(66,66,10,'','','','','','',''); text-align: center;
+          a{@include baseSet(14,66,'',-14,'','',black,white,12,14); text-align: center; opacity: 0.5; display: block;}
+        }}
+      .ad-del{ position: absolute; top: -6px; right: -6px; outline: none;
+        border:1px solid #ccc; border-radius: 50%; @include baseSet(12,12,'','','','',white,orange,8,12)}
+    }
+  }
+}

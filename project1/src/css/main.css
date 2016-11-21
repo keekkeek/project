@@ -1,0 +1,880 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+#header, #top, #nav, #bottom, #footer, #advertise {
+  width: 100%;
+}
+#header div, #top div, #nav div, #bottom div, #footer div, #advertise div {
+  width: 1263px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 30px;
+  background-color: #fafafa;
+  color: black;
+  line-height: 30px;
+}
+#header div {
+  height: 30px;
+}
+#header div .h-part1, #header div .h-part2 {
+  display: block;
+  float: left;
+}
+#header div .h-part1 {
+  height: 30px;
+  width: 430px;
+  padding-left: 30px;
+  line-height: 30px;
+}
+#header div .h-part1 .h-slogan, #header div .h-part1 .h-login, #header div .h-part1 .h-sign {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+#header div .h-part1 .h-slogan {
+  width: 165px;
+}
+#header div .h-part1 .h-login {
+  height: 15px;
+  width: 61px;
+  margin-top: 6px;
+  margin-left: 10px;
+  background-color: #d91515;
+  color: white;
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid #d91515;
+  border-radius: 3px;
+}
+#header div .h-part1 .h-login a, #header div .h-part1 .h-login button {
+  display: block;
+  float: left;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  border: none;
+}
+#header div .h-part1 .h-login a {
+  font-weight: bold;
+  width: 15px;
+}
+#header div .h-part1 .h-login button {
+  width: 45px;
+  background-color: #f7f7f7;
+  outline: none;
+}
+#header div .h-part1 .h-sign {
+  height: 30px;
+  width: 46px;
+  margin-left: 6px;
+  color: #d91515;
+  line-height: 30px;
+}
+#header div .h-part1 .h-sign span {
+  color: black;
+}
+#header div .h-part2 {
+  height: 30px;
+  width: 640px;
+  margin-left: 137px;
+  line-height: 14px;
+}
+#header div .h-part2 ul {
+  height: 30px;
+  position: relative;
+}
+#header div .h-part2 ul li {
+  display: block;
+  float: left;
+  height: 30px;
+  padding-left: 9px;
+  padding-right: 9px;
+  line-height: 30px;
+}
+#header div .h-part2 ul li a {
+  display: block;
+  float: left;
+}
+#header div .h-part2 ul i {
+  display: block;
+  float: left;
+  height: 30px;
+  width: 1px;
+  margin-left: 3px;
+  color: #ccc;
+  line-height: 30px;
+  font-style: normal;
+  margin-right: 3px;
+}
+#header div .h-part2 ul .break1, #header div .h-part2 ul .break2 {
+  margin-left: 84px;
+}
+#header div .h-part2 ul .mine, #header div .h-part2 ul .web-guide {
+  position: absolute;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 30px;
+  z-index: 100;
+}
+#header div .h-part2 ul .mine div, #header div .h-part2 ul .web-guide div {
+  height: 30px;
+  width: 64px;
+  background-color: white;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-bottom: solid 1px #fafafa;
+}
+#header div .h-part2 ul .mine div .img1, #header div .h-part2 ul .web-guide div .img1 {
+  display: block;
+  float: right;
+  height: 8px;
+  width: 16px;
+  margin-top: 8px;
+  background: url("../image/paixiewang1.png") no-repeat -142px -500px;
+}
+#header div .h-part2 ul .mine div:hover, #header div .h-part2 ul .web-guide div:hover {
+  color: red;
+  background-color: #fafafa;
+}
+#header div .h-part2 ul .mine .div2, #header div .h-part2 ul .mine .div3, #header div .h-part2 ul .mine .div4, #header div .h-part2 ul .mine .div5, #header div .h-part2 ul .mine .div6, #header div .h-part2 ul .web-guide .div2, #header div .h-part2 ul .web-guide .div3, #header div .h-part2 ul .web-guide .div4, #header div .h-part2 ul .web-guide .div5, #header div .h-part2 ul .web-guide .div6 {
+  display: none;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #fafafa;
+  border-left: 1px solid #ccc;
+}
+#header div .h-part2 ul .mine .div1, #header div .h-part2 ul .web-guide .div1 {
+  height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  border-color: #fafafa;
+}
+#header div .h-part2 ul .mine .div6, #header div .h-part2 ul .web-guide .div6 {
+  border-bottom: 1px solid #ccc;
+}
+#header div .h-part2 ul .web-guide {
+  position: absolute;
+  top: 0px;
+  left: 460px;
+}
+#header div .h-part2 ul .h-shopcar a {
+  margin-top: 8px;
+  height: 14px;
+  line-height: 14px;
+  border: 1px solid #cccccc;
+  background-color: #fdf7ec;
+}
+#header div .h-part2 ul .h-shopcar a span {
+  color: #d91515;
+}
+#header div .h-part2 ul .h-mobile {
+  line-height: 14px;
+}
+#header div .h-part2 ul .h-mobile img {
+  margin-top: 5px;
+}
+
+#top {
+  height: 92px;
+}
+#top div {
+  height: 92px;
+  position: relative;
+}
+#top div .t-logo, #top div .t-search, #top div .t-adv {
+  display: block;
+  float: left;
+  height: 92px;
+}
+#top div li {
+  display: block;
+  float: left;
+}
+#top div .t-logo {
+  width: 210px;
+  margin-left: 30px;
+  background: url("../image/t-logo.jpg") no-repeat;
+}
+#top div .t-search {
+  margin-left: 250px;
+  width: 389px;
+}
+#top div .t-search .t-input {
+  height: 30px;
+  width: 383px;
+  margin-top: 23px;
+  border: 2px solid #e7381c;
+}
+#top div .t-search .t-input input, #top div .t-search .t-input button {
+  display: block;
+  float: left;
+  border: none;
+  outline: none;
+}
+#top div .t-search .t-input input {
+  height: 30px;
+  width: 280px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 80px;
+  background: url("../image/paixiewang1.png") no-repeat -170px -588px;
+}
+#top div .t-search .t-input button {
+  height: 30px;
+  width: 73px;
+  background-color: #e7381c;
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+#top div .t-search ul li {
+  padding-right: 10px;
+  margin-top: 5px;
+}
+#top div .t-search ul li:hover {
+  color: #e7381c;
+}
+#top div .t-search ul .t-red {
+  color: #e7381c;
+}
+#top div .t-adv {
+  width: 212px;
+  margin-left: 136px;
+  position: relative;
+  overflow: hidden;
+}
+#top div .t-adv .t-ablum1 {
+  width: 848px;
+  height: 59px;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  overflow: hidden;
+}
+#top div .t-adv .t-ablum1 li {
+  width: 212px;
+  height: 59px;
+}
+#top div .t-adv .t-ablum2 {
+  position: absolute;
+  right: 0px;
+  bottom: 14px;
+}
+#top div .t-adv .t-ablum2 li {
+  padding-left: 4px;
+  width: 10px;
+  height: 4px;
+}
+#top div .t-adv .t-ablum2 li a {
+  display: block;
+  width: 10px;
+  height: 2px;
+  margin-top: 2px;
+  background-color: #cccccc;
+}
+#top div .t-adv .t-ablum2 li a:hover {
+  height: 4px;
+  background-color: #e7381c;
+  margin-top: 0px;
+}
+
+#nav {
+  height: 36px;
+  background-color: #3c4251;
+  position: absolute;
+  z-index: 2;
+}
+#nav div {
+  height: 36px;
+}
+#nav div #down-list, #nav div ul {
+  display: block;
+  float: left;
+  height: 36px;
+}
+#nav div #down-list {
+  height: 36px;
+  width: 210px;
+  margin-left: 30px;
+  color: white;
+  font-size: 16px;
+  line-height: 36px;
+  position: relative;
+}
+#nav div #down-list .a1 {
+  height: 36px;
+  width: 187px;
+  margin-left: 23px;
+  font-size: 16px;
+  line-height: 36px;
+}
+#nav div #down-list:hover {
+  background-color: #e7381c;
+}
+#nav div ul {
+  z-index: -1;
+}
+#nav div ul li {
+  display: block;
+  float: left;
+  z-index: -1;
+  height: 36px;
+  padding-left: 18px;
+  color: white;
+  font-size: 14px;
+  line-height: 36px;
+  padding-right: 18px;
+  font-weight: bold;
+}
+#nav div ul li:hover {
+  background-color: #292d37;
+  z-index: -1;
+}
+#nav div ul .n-selected {
+  background-color: #292d37;
+}
+#nav div ul .luggage {
+  margin-right: 230px;
+}
+
+#nav div #down-list #nest {
+  z-index: 100;
+  border: solid 1px #ccc;
+  border-top: none;
+  display: none;
+  height: 722px;
+  width: 208px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 36px;
+  left: 0px;
+}
+#nav div #down-list #nest .nest-shop {
+  height: 94px;
+  width: 185px;
+  margin-left: 11px;
+  border-bottom: 1px dotted #cccccc;
+}
+#nav div #down-list #nest .nest-shop p {
+  font-size: 18px;
+  color: black;
+}
+#nav div #down-list #nest .nest-shop ul {
+  height: 50px;
+  width: 120px;
+  background-color: white;
+  color: black;
+  font-size: 10px;
+}
+#nav div #down-list #nest .nest-shop ul li {
+  display: block;
+  float: left;
+  background-color: white;
+  padding: 4px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+#nav div #down-list #nest .nest-shop ul li a {
+  color: #666666;
+  background-color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+#nav div #down-list #nest img {
+  margin-left: 11px;
+  margin-top: 4px;
+}
+#nav div #down-list #nest .second {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 209px;
+  width: 780px;
+  height: 665px;
+  background-color: white;
+  display: none;
+}
+#nav div #down-list #nest .second p, #nav div #down-list #nest .second ul {
+  margin-left: 30px;
+}
+#nav div #down-list #nest .second p {
+  padding-left: 5px;
+  clear: both;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#nav div #down-list #nest .second ul {
+  width: 505px;
+  border-top: 1px dotted #ccc;
+  margin-bottom: 20px;
+}
+#nav div #down-list #nest .second ul li {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+}
+#nav div #down-list #nest .second ul li:hover {
+  background-color: goldenrod;
+  color: white;
+}
+#nav div #down-list #nest .second .sec-adv {
+  position: absolute;
+  top: 10px;
+  left: 520px;
+}
+
+#bottom {
+  height: 170px;
+  margin-top: 10px;
+  background-color: #656a76;
+  color: #cccccc;
+}
+#bottom div {
+  width: 1200px;
+  height: 170px;
+}
+#bottom div ul {
+  display: block;
+  float: left;
+  margin-top: 23px;
+  width: 150px;
+}
+#bottom div ul li {
+  margin-bottom: 12px;
+}
+#bottom div ul li:hover {
+  color: #e7381c;
+}
+#bottom div ul .b-li1 {
+  font-size: 14px;
+  color: white;
+}
+#bottom div ul .b-li2 {
+  font-size: 22px;
+  color: pink;
+  font-weight: bold;
+}
+#bottom div .b-ul1 {
+  width: 200px;
+  margin-left: 100px;
+}
+#bottom div .b-ul2 {
+  width: 74px;
+}
+#bottom div .b-ul3 {
+  width: 180px;
+}
+
+#footer {
+  height: 138px;
+}
+#footer div {
+  width: 1200px;
+}
+#footer div ul li {
+  display: block;
+  float: left;
+}
+#footer div #service {
+  height: 30px;
+  margin-top: 34px;
+  margin-bottom: 14px;
+}
+#footer div #service li {
+  display: block;
+  float: left;
+  height: 30px;
+  width: 232px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  border-right: 1px solid #cccccc;
+}
+#footer div #service li img {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: block;
+  float: left;
+}
+#footer div #service li span {
+  color: #e7381c;
+}
+#footer div #service .s-last {
+  border-right: none;
+}
+#footer div #link {
+  height: 32px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+#footer div #link li {
+  height: 32px;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 32px;
+}
+#footer div #link li:hover {
+  color: #e7381c;
+}
+#footer div #link .l-li1 {
+  padding-left: 0px;
+  font-weight: bold;
+}
+#footer div #link .l-li1:hover {
+  color: black;
+}
+#footer div #news {
+  height: 12px;
+  margin-top: 20px;
+}
+#footer div #news li {
+  padding: 0 8px;
+  border-right: solid 1px #cccccc;
+}
+#footer div #news li:hover {
+  color: #e7381c;
+}
+#footer div #news .n-li1 {
+  border-right: none;
+}
+#footer div #news .n-li2 {
+  padding-left: 0px;
+}
+#footer div p {
+  clear: both;
+  margin-top: 10px;
+}
+
+#advertise {
+  height: 64px;
+}
+#advertise div {
+  height: 64px;
+}
+#advertise div #ad-div1 {
+  height: 64px;
+  width: 856px;
+  margin-left: 0px;
+  background-color: #fcfcfc;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#advertise div #ad-div1 img {
+  margin-left: 5px;
+}
+#advertise div #ad-div1 img, #advertise div #ad-div1 li, #advertise div #ad-div1 a {
+  display: block;
+  float: left;
+}
+#advertise div #ad-div1 ul li {
+  height: 66px;
+  width: 66px;
+  margin-left: 10px;
+  text-align: center;
+}
+#advertise div #ad-div1 ul li a {
+  height: 14px;
+  width: 66px;
+  margin-top: -14px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  opacity: 0.5;
+  display: block;
+}
+#advertise div #ad-div1 .ad-del {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  color: orange;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+#toolbar div, #toolbar2 div {
+  background-color: #7a6e6e;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-bottom: 2px;
+  border-radius: 3px 0px 0px 3px;
+}
+#toolbar div em, #toolbar2 div em {
+  border-radius: 3px 0px 0px 3px;
+  font-style: normal;
+  height: 35px;
+  width: 62px;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+}
+#toolbar div a, #toolbar2 div a {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: block;
+  background: url(../image/toolbars.png) no-repeat -90px -176px;
+  border-radius: 3px 0px 0px 3px;
+  z-index: 101;
+}
+
+#toolbar {
+  height: 216px;
+  width: 35px;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  margin-top: -108px;
+}
+#toolbar div .toola2 {
+  background-position: -50px 0px;
+}
+#toolbar div .toola3 {
+  background-position: -50px -50px;
+}
+#toolbar div .toola4 {
+  background-position: -50px -100px;
+}
+#toolbar div .toola5 {
+  background-position: -190px -150px;
+}
+#toolbar div .toola6 {
+  background-position: -50px -150px;
+}
+
+#toolbar2 {
+  height: 108px;
+  width: 35px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+#toolbar2 div p {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: block;
+  border-radius: 3px 0px 0px 3px;
+  text-align: center;
+  line-height: 17px;
+  color: #fff;
+  background-color: #c81623;
+}
+#toolbar2 div .toola7 {
+  background-position: -50px -250px;
+}
+#toolbar2 div .toola8 {
+  background-position: -50px -300px;
+}
+
+#toolbar3 {
+  display: none;
+  height: 180px;
+  width: 30px;
+  position: fixed;
+  top: 50%;
+  margin-top: -80px;
+  left: 50%;
+  margin-left: -635px;
+}
+#toolbar3 ul li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+#toolbar3 ul li a {
+  position: absolute;
+  height: 29px;
+  width: 30px;
+  text-align: center;
+  line-height: 29px;
+}
+#toolbar3 ul li .floor1 {
+  display: block;
+}
+#toolbar3 ul li .front1 {
+  display: none;
+}
+#toolbar3 ul li .toolbar3space {
+  height: 0px;
+  width: 20px;
+  margin: 0 auto;
+  margin-top: 29px;
+  border-top: dotted 1px #ccc;
+}
+
+#top .t-adv .t-ablum2 li .display1 {
+  height: 4px;
+  background-color: #e7381c;
+  margin-top: 0px;
+}
+
+#carousel div .c-album2 .display2 {
+  background-color: #e7381c;
+}
+
+#nav div #down-list #nest .nest-shop ul .color1 {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color1 a {
+  color: white;
+  background-color: #fe7b41;
+}
+#nav div #down-list #nest .nest-shop ul .color2 {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color2 a {
+  color: white;
+  background-color: #fd3089;
+}
+#nav div #down-list #nest .nest-shop ul .color3 {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color3 a {
+  color: white;
+  background-color: #336699;
+}
+#nav div #down-list #nest .nest-shop ul .color4 {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color4 a {
+  color: white;
+  background-color: #f59f0a;
+}
+#nav div #down-list #nest .nest-shop ul .color5 {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color5 a {
+  color: white;
+  background-color: #f23029;
+}
+#nav div #down-list #nest .nest-shop ul .color6 {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color6 a {
+  color: white;
+  background-color: #04b527;
+}
+#nav div #down-list #nest .nest-shop ul .color7 {
+  color: white;
+  background-color: #e34242;
+}
+#nav div #down-list #nest .nest-shop ul .color7 a {
+  color: white;
+  background-color: #e34242;
+}
+
+#container #box #left .name .common, #container #box #left .pass .common, #container #box #left .pass2 .common {
+  height: 38px;
+  width: 288px;
+  background-color: #eef9ff;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px #ddf3ff;
+  border-left: none;
+}
+
+#container #box #left .name .right, #container #box #left .pass .right, #container #box #left .pass2 .right {
+  height: 38px;
+  width: 288px;
+  background-color: #ccc;
+  color: white;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px orange;
+  border-left: none;
+  result: right;
+}
+
+#container #box #left .name .wrong, #container #box #left .pass .wrong, #container #box #left .pass2 .wrong {
+  height: 38px;
+  width: 288px;
+  background-color: #fdeaea;
+  font-size: 12px;
+  line-height: 38px;
+  border: solid 1px pink;
+  border-left: none;
+}
+
+#content .inner #magnifier .left #big #square {
+  display: none;
+  cursor: move;
+  visibility: visible;
+  width: 211px;
+  height: 211px;
+  border: solid 1px #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FEDE4F;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+#content .inner #magnifier #shower {
+  background: url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 423px;
+  display: none;
+  z-index: 2;
+  width: 398px;
+  height: 398px;
+  border: solid 1px #ccc;
+}
+
+/*# sourceMappingURL=main.css.map */

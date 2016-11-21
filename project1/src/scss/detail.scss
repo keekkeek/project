@@ -1,0 +1,181 @@
+@import "variable";
+@import "mixin";
+@import "handler";
+@import "util";
+
+*{margin:0; padding:0;}
+body{font-size:12px; margin: 0 auto;}
+ul li {list-style:none;}
+a{ text-decoration:none;}
+img{ border:none;}
+
+
+#container{ height: 22445px;}
+
+#detail-adv, #detail-nav, #content{
+  .inner{ width: 1200px; margin: auto}
+}
+
+#detail-adv{height: 120px;
+  .inner{
+    height: 120px; img{ margin: 0 auto; display: block;}
+  }
+}
+
+#detail-nav{ height: 30px;
+  .inner{ height: 30px; background-color: #3c4251; color: white;
+    @include baseSet(30,'','','','','',#3c4251,white,14,30);
+    ul{@include dis-flo(left);
+      li{ @include dis-flo(left);
+        @include baseSet(30,'','','',39,'','','','',30); padding-right: 39px;
+      }
+    }
+    p{@include dis-flo(right); @include baseSet(30,70,'','','','',#606982,white,12,30); text-align: center;}
+  }
+}
+
+
+#content{ height: 21492px; overflow: hidden;
+  .inner{  height: 21492px;
+    .road{ color: $detail-grey; margin-top: 10px; margin-bottom: 10px;
+    a{ &:hover{ color: red;}}
+    }
+    #magnifier,#summary,#seller,#introduce,#explain{ @include dis-flo(left);}
+    #magnifier{ width: 424px; height: 534px; position: relative;
+     .left{ width: 424px;
+      #big,.small,.tip{ width: 422px;}
+      #big{ width: 422px; height: 422px; border: 1px solid $border; position: relative;
+        img{ width: 422px; height: 422px;}
+      }
+      .small{ height: 80px; overflow: hidden;
+        ul {
+          li{ margin-top: 10px;
+            background: url('../image/detail/detail.png') no-repeat 0px -80px;
+          @include dis-flo(left); width: 60px; height: 60px; margin-right: 10px;
+            img{width: 58px; height: 58px; margin-top: 1px; margin-left: 1px;}
+          }
+        }
+      }
+      .tip{ height: 20px; color: $detail-grey;font-size: 14px;
+        a{line-height: 20px; @include dis-flo(left);
+          padding-left: 16px;
+          div{ height:13px; width: 13px;@include dis-flo(left); margin-top: 3px;
+            background: url("../image/detail/detail.png") no-repeat -156px -154px;}
+        }
+        .store{ float: right;
+          div{background: url("../image/detail/detail.png") no-repeat -178px -154px;}
+        }
+      }
+    }
+    }
+    #summary{@include baseSet(530,534,20,'','','','','','','');
+      .sum-div1{ @include baseSet(100,530,'',15,'','','','','','');
+        background: url('../image/detail/detail.png') no-repeat 0 -261px;
+        a{ @include dis-flo(left);@include baseSet(20,'','','','','','',$detail-grey,'',20);
+        }
+        .product-id{ float: right; margin-right: 8px;}
+        .market-pri,.product-id,.price,.discount{ margin-top: 10px;}
+        .price,.market-pri{ margin-left: 8px;}
+        .price,.discount{ clear: both; span{ color: $logoRed; font-weight: bold; font-size: 20px;}}
+        .discount{ margin-left: 54px;}
+      }
+      .send,.sum-div2,.color,.size,.count{ margin-left: 5px; color: $detail-grey; margin-bottom: 15px;}
+      .send{ margin-top:10px; span{ color: black;}}
+      .sum-div2{ border-top: 1px dotted $detail-grey; border-bottom: 1px dotted $detail-grey;
+        ul{height: 36px; line-height: 36px;
+          li{@include dis-flo(left);
+            @include baseSet(20,172,'',9,'','','','',12,20); text-align: center;
+            border-right: 1px dotted $detail-grey;
+            span{ color: $logoRed;}
+          }
+          .xiebi{ border-right: none;}
+        }
+      }
+      .color, .size, .count {p{@include dis-flo(left); width: 54px;}}
+      .color{ height: 40px; line-height: 40px;
+        ul{ height: 40px;
+          li{@include baseSet(36,36,'','','','','','','',''); margin-right: 6px; border: 1px solid $detail-grey;
+            @include dis-flo(left);
+            img{width: 36px; height: 36px; border: none;}
+          }
+        }
+      }
+      .size{ height: 30px; line-height: 30px;
+        ul { height: 30px;
+          li{@include dis-flo(left); height: 30px; width: 40px; margin-right: 6px; border: 1px solid $detail-grey;
+            text-align: center;
+        }}
+      }
+      .count{height: 30px; line-height: 30px; margin-bottom: 32px;
+        button,input{@include dis-flo(left); outline: none;}
+        button{ height: 30px; width: 30px; border: none;}
+        input{ outline: none; @include baseSet(28,48,'','','','','','',12,28); border: solid 1px $detail-grey; text-align: center;}
+        .minus{ background: url('../image/detail/minus1.jpg') no-repeat;}
+        .plus{ background: url('../image/detail/plus2.jpg') no-repeat;}
+      }
+      .buy,.push,.buy-way{@include dis-flo(left);
+        margin-right: 10px;
+      }
+      .buy,.push{@include baseSet(40,180,'','','','','',white,16,40); text-align: center;
+      }
+      .buy{ background-color: #cc0000; margin-left: 50px;}
+      .push{ background-color: #da720e;}
+      .buy-way{ height: 40px; line-height: 40px;}
+    }
+
+    #seller{ @include baseSet(818,198,20,'','','','','','','');
+      border: 1px solid $grey; border-top: solid 2px #f2f2f2;
+      .logo,.shop-info,.shop-acti,.shop-say,.see-goods,.store-good{
+        width: 170px; margin-left: 9px; padding-left:10px; display: block;
+      }
+      .logo{ height: 48px; line-height: 48px; border-bottom: solid 1px #ccc;}
+      .shop-info{ height: 128px;  border-bottom: dotted 1px #ccc;
+      .rongyu{ margin-top: 20px;} .kefu{ margin-top: 14px;}
+      button{ border: solid 1px #ccc; @include baseSet(29,70,'',20,'','',#fafafa,'',12,28);
+      text-align: center; margin-right: 15px;@include dis-flo(left); outline: none;
+        }
+      }
+      .shop-acti{ height: 78px;  border-bottom: dotted 1px #ccc; color:#826c60;
+        p{ margin-top: 20px;} li{ margin-top: 15px;}
+      }
+      .shop-say{ height: 136px; color:#826c60; p{ margin-top: 15px;}}
+      .see-goods{ height: 220px;
+        .good-img{ @include baseSet(160,160,'',25,'','','','','',''); overflow: hidden;
+          background: url('../image/detail/goods1.jpg') no-repeat;
+          .good-price{ display: block; @include baseSet(20,160,'','','','',white,black,10,20);
+          margin-top: 140px; opacity: 0.5; text-align: center;
+          }
+        }
+      }
+      .store-goods{ height: 193px;
+        p{ margin-top: 28px; text-align: center;}
+      }
+    }
+    #introduce{width:975px; height: 240px; margin-top: -270px; position: relative;
+      .intro-top{width:975px; height: 38px;
+      #spxq,#yhpl,#spare,#gwbz,#zfps{ margin-top: 3px; border-top: solid 1px $grey;
+        @include dis-flo(left); height: 34px; border-right: solid 1px $grey;
+        width: 135px; line-height: 34px; text-align: center; border-bottom: solid 1px #cc0000;
+      }
+      #spxq{ border: solid 1px #cc0000; border-bottom: none; margin-top: 0px;
+         border-top: solid 3px#cc0000; height: 35px; color: #cc0000;
+      }
+      #spare{ text-align: right; width: 429px;
+        p{ height: 35px; line-height:35px; img{ float: right; margin-top: 5px; margin-right: 20px;}}
+      }
+      }
+      .txt1{ position: absolute; top: 37px;
+        display: none;
+        width:973px; height: 203px; border: solid 1px $grey; border-top: none;
+        ul{@include dis-flo(left);  margin-top: 30px; margin-left: 60px; li{ line-height: 20px;}}
+        img{ width: 950px; height: 185px; margin-top: 5px; margin-left: 5px;}
+      }
+    }
+    #explain{ width: 965px; background-color: #fafafa;
+      .flow{ @include dis-flo(left); margin-top:30px;}
+      .brief,.kstj{@include dis-flo(right);}
+    }
+  }
+}
+
+

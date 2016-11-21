@@ -1,0 +1,75 @@
+#top .t-adv .t-ablum2 li .display1{height: 4px; background-color: $logoRed; margin-top: 0px;}
+
+#carousel div .c-album2 .display2{background-color: $logoRed;}
+
+#nav  div  #down-list  #nest .nest-shop{
+  ul{
+    .color1{ color: white; background-color: #fe7b41;
+    a{color: white; background-color: #fe7b41;}
+    }
+    .color2{ color: white; background-color: #fd3089;
+    a{color: white; background-color: #fd3089;}
+    }
+    .color3{ color: white; background-color: #336699;
+    a{color: white; background-color: #336699;}
+    }
+    .color4{ color: white; background-color: #f59f0a;
+    a{color: white; background-color: #f59f0a;}
+    }
+    .color5{ color: white; background-color: #f23029;
+    a{color: white; background-color: #f23029;}
+    }
+    .color6{ color: white; background-color: #04b527;
+    a{color: white; background-color: #04b527;}
+    }
+    .color7{ color: white; background-color: #e34242;
+    a{color: white; background-color: #e34242;}
+    }
+  }
+}
+
+#container #box #left {.name, .pass, .pass2 {
+  .common {
+    @include baseSet(38, 288, '', '', '', '', #eef9ff, '', 12, 38);
+    border: solid 1px #ddf3ff;
+    border-left: none;
+
+  }
+}}
+#container #box #left {.name, .pass, .pass2 {
+  .right {
+    @include baseSet(38, 288, '', '', '', '', #ccc, white, 12, 38);
+    border: solid 1px orange;
+    border-left: none;
+    result:right;
+  }
+}}
+
+#container #box #left {.name, .pass, .pass2 { .wrong{
+  @include baseSet(38,288,'','','','',#fdeaea,'',12,38);
+  border: solid 1px pink; border-left: none;
+
+}}}
+
+
+#content .inner #magnifier .left #big #square{
+  display:none; cursor:move; visibility:visible;
+  width:211px; height: 211px; border:solid 1px #ccc;
+  position:absolute; top:0px; left:0px;
+  background-color:#FEDE4F; opacity:0.2; filter:alpha(opacity=20);
+}
+
+#content .inner #magnifier #shower{
+  background:url(../image/detail/ddmf1-1.jpg) no-repeat 0px 0px;
+  position:absolute; top:0px; left:423px; display:none;
+  z-index:2; width:398px; height:398px;
+  border:solid 1px #ccc;
+}
+
+
+
+
+
+
+
+

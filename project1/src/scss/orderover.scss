@@ -1,0 +1,31 @@
+@import "variable";
+@import "mixin";
+
+*{margin:0; padding:0;}
+body{font-size:12px; margin: 0 auto;}
+ul li {list-style:none;}
+a{ text-decoration:none;}
+img{ border:none;}
+
+#order{width: 100%;
+  .inner{ width: 983px; margin: 0 auto;}
+}
+
+#order{height: 345px;
+  .inner{ height: 345px;
+    .frame{border: 1px solid #f34e0f; @include baseSet(166,980,'',22,'','','','','','');
+      .p1,.p2,.p3,.p4{ margin-left: 20px;margin-top: 12px;}
+      .p1{ margin-top: 34px; font-size: 16px; font-weight: bold;
+        span{font-size: 16px; font-weight: 400; a{ font-size: 14px; color: blue;}}
+      }
+      .p2{.price{ font-size: 18px; font-weight: bold; color: #f34e0f;}}
+      .p3{ color: $detail-grey;}
+    }
+    .attention{ width: 982px; height: 118px; background-color: #fcfcfc; margin-top: 40px; overflow: hidden;
+      @include  baseSet(118,982,'',40,'','',#fcfcfc,'','','');
+      .event,.text{ margin-left: 22px;}
+      .event{ margin-top: 18px; font-size: 13px; font-weight: bold;}
+      .text{ line-height: 22px; color: $detail-grey;}
+    }
+  }
+}
